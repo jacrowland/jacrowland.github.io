@@ -32,28 +32,39 @@
         <section id="welcome-section">
             <h1>Jacob Rowland</h1>
             <p>Computer Science, Information Systems,<br> and Marketing Graduate</p>
+            <a href="#about-section" class="btn"><i class="fa-solid fa-angle-down"></i></a>
         </section>
         <section id="about-section">
             <img alt="profile picture" class="profile-image" src="https://avatars.githubusercontent.com/u/19786078?v=4">
-            <p class="bold">Hi, I'm Jacob and I am looking for hybrid and remote positions in development, data analysis or marketing. I am a
+            <p class="bold">Hi, I'm Jacob and I am looking for hybrid and remote positions in software development, data analysis or marketing. I am a
                 passionate and hard-working young professional who works well in a team. I am driven to learn new
                 skills quickly while working on interesting projects. Outside of work I enjoy regular exercise – be that
                 through cycling or the gym. I also enjoy gaming, virtual reality, reading, writing, and
-                op-shopping with friends.</p>
+                op-shopping with friends.
+            </p>
+                
         </section>
         <section id="projects">
             <h2>Project Showcase</h2>
             <div class="project-tiles">
                 <div class="project-tile" id="qr-code-project">
-                    <a href="https://github.com/jacrowland/qr-code-detection">
+                    <a target="_blank" onclick="displayModal('qr-code-project-modal')" class="cursor-point">
                         <div class="project-image">
-                            <img src="https://www.yachtingnz.org.nz/sites/default/files/styles/social_media/public/2020-08/Covid%20poster.jpeg.jpg?itok=cKmjKFWw">
+                            <img src="images/qr-code-detector-thumbnail.jpg">
                         </div>
                         <h3 class="project-title">QR Code Detector</h3>
                     </a>
                 </div>
+                <div target="_blank" class="project-tile" id="visairo-ready-project">
+                    <a onclick="displayModal('visairo-ready-project-modal')" class="cursor-point">
+                        <div class="project-image">
+                            <img src="https://resources.fphcare.com/content/rt076-and-caregiver.jpg">
+                        </div>
+                        <h3 class="project-title">F&P Healthcare™ Visairo™ Ready</h3>
+                    </a>
+                </div>
                 <div class="project-tile" id="genectic-algorithm-project">
-                    <a href="https://github.com/jacrowland/genetic-algorithm">
+                    <a target="_blank" href="https://github.com/jacrowland/genetic-algorithm">
                         <div class="project-image">
                             <img src="https://www.researchgate.net/profile/Peter-Bentley-4/publication/221530990/figure/fig4/AS:668838282686488@1536474881907/Binary-string-is-split-into-sequence-and-next-time-segments.ppm">
                         </div>
@@ -61,23 +72,16 @@
                     </a>
                 </div>
                 <div class="project-tile" id="naive-bayes-project">
-                    <a href="https://github.com/jacrowland/naive-bayes">
+                    <a target="_blank" href="https://github.com/jacrowland/naive-bayes">
                         <div class="project-image">
                             <img src="https://miro.medium.com/max/468/1*IGwM9cb8W-gyJW5rkiVQPw.jpeg">
                         </div>
                         <h3 class="project-title">Naive Bayes</h3>
                     </a>
                 </div>
-                <div class="project-tile" id="visairo-ready-project">
-                    <a href="https://www.fphcare.com/nz/hospital/adult-respiratory/noninvasive-ventilation/visairo/">
-                        <div class="project-image">
-                            <img src="https://resources.fphcare.com/content/rt076-and-caregiver.jpg">
-                        </div>
-                        <h3 class="project-title">F&P Healthcare™ Visairo™ Ready</h3>
-                    </a>
-                </div>
+
                 <div class="project-tile" id="weakest-link-project">
-                    <a href="https://github.com/jacrowland/weakest-link">
+                    <a target="_blank" href="https://github.com/jacrowland/weakest-link">
                         <div class="project-image">
                             <img src="https://static.standard.co.uk/s3fs-public/thumbnails/image/2020/08/14/11/the-weakest-link-0820e.jpg?width=1200">
                         </div>
@@ -85,15 +89,15 @@
                     </a>
                 </div>
                 <div class="project-tile" id="house-hunt-project">
-                    <a href="https://github.com/jacrowland/house-hunt">
+                    <a target="_blank" href="https://github.com/jacrowland/house-hunt">
                         <div class="project-image">
-                            <img src="https://images.pexels.com/photos/8134750/pexels-photo-8134750.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                            <img src="https://images.pexels.com/photos/273209/pexels-photo-273209.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
                         </div>
-                        <h3 class="project-title">House Hunt Web App</h3>
+                        <h3 class="project-title">Real Estate Web Application</h3>
                     </a>
                 </div>
             </div>
-            <a href="https://github.com/jacrowland/" class="btn">View more <i class="fas fa-chevron-right"></i></a>
+            <a href="https://github.com/jacrowland/" class="btn" target="_blank">View more <i class="fas fa-chevron-right"></i></a>
         </section>
         <section id="contact-section">
             <h2>Please get in touch </h2>
@@ -105,9 +109,62 @@
                 <li><a class="nav-link" target="_blank" href="https://www.linkedin.com/in/jacob-rowland-197821193/" id="linkedin-link"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
             </ul>    
         </section>
+
+        <div class="modal-outer display-none" id="qr-code-project-modal">
+            <div class="modal-inner">
+                <div class="modal-top">
+                    <h2>QR Code Detector</h2>
+                    <a onclick="hideModal('qr-code-project-modal')" class="btn no-border btn-large cursor-point"><i class="fa-solid fa-xmark"></i></a>
+                </div>
+                <img src="images/qr-code-detector.jpg">
+                <p>This assignment for COMPSCI 373 Computer Graphics and Image Processing at The University of Auckland involved developing a QR Code Detector from scratch in Python using only NumPy to import the image.
+                    In the process I gained an understanding of image processing techniques such as morphological operations, segmentation
+                    and connected component analysis. Several extensions where also incorporated
+                    including the implementation of an adaptive thresholding algorithm, as well as, ensuring the detector worked correctly on 
+                    rotated images.
+
+                    My solution and its associated report was selected as one of the top three out of a class of more than 200.
+                    </p>
+                <a href="https://github.com/jacrowland/" class="btn no-border btn-center" target="_blank"> View on Github  <i class="fas fa-chevron-right"></i></a>
+            </div>
+        </div>
+
+        <div class="modal-outer display-none" id="visairo-ready-project-modal">
+            <div class="modal-inner">
+                <div class="modal-top">
+                    <h2>Visairo Ready</h2>
+                    <a onclick="hideModal('visairo-ready-project-modal')" class="btn no-border btn-large cursor-point"><i class="fa-solid fa-xmark"></i></a>
+                </div>
+                <video width="550" controls>
+                    <source src="videos\VisairoReadyShowcase.m4v" type="video/mp4">
+                </video>
+                <p>
+                    As a Marketing Intern at Fisher & Paykel Healthcare™ I developed Visairo™ Ready, a two-part online course, aimed at getting hospital staff ready for the
+                    introduction of the mask in their respiratory unit. The course was created using existing and new materials that I created. 
+                    This included wireframing page concepts, writing scripts and storyboarding video content, and prototyping and developing interactive game-like experiences.
+                    <br><br>
+                    <strong>Tools used: </strong> Adobe XD, Davinci Resolve, Blender, Articulate 360
+                </p>
+                <a href="https://www.fphcare.com/nz/hospital/adult-respiratory/noninvasive-ventilation/visairo/" class="btn no-border btn-center" target="_blank"> Get Visairo Ready  <i class="fas fa-chevron-right"></i></a>
+            </div>
+        </div>
+
+
     </main>
 </body>
 <footer>
     <p><i class="fa-solid fa-copyright"></i> Copyright 2022</p>
+    <a style="font-size: smaller" href="https://github.com/jacrowland/jacrowland.github.io" class="nav-link">View this project on Github</a>
 </footer>
+
+
+<script>
+
+const displayModal = (id) => {document.getElementById(id).classList.remove('display-none');};
+const hideModal = (id) => {
+    document.getElementById(id).classList.add('display-none');
+    document.querySelectorAll('video').forEach(video => video.pause());
+}
+
+</script>
 </html>
