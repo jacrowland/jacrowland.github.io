@@ -408,6 +408,12 @@ footer {
     }
 }
 
+@media screen and (max-height: 850px) {
+    .modal-inner img, .modal-inner video {
+        display: none;
+     }
+}
+
 @media screen and (max-width: 900px) {
     #navbar p {
         display: none;
