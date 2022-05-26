@@ -438,8 +438,10 @@ footer {
     }
 
     .modal-inner {
-        width: 90%;
+        width: 100vw;
         margin: 0 50px;
+        height: 100vh;
+        margin: 10px;
     }
 
     .modal-inner img, .modal-inner video {
