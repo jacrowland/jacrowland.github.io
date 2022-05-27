@@ -104,51 +104,49 @@
             <ul>
                 <li><a class="nav-link" target="_blank" href="https://github.com/jacrowland/" id="profile-link"><i class="fab fa-github"></i> Github</a></li>
                 <li><a class="nav-link" target="_blank" href="mailto:jacob.rowland@hotmail.com" id="email-link"><i class="fa-solid fa-envelope"></i> Send an email</a></li>
-                <li><a class="nav-link" target="_blank" href="https://naiveprotagonist.wordpress.com/" id="blog-link"><i class="fa-solid fa-blog"></i> Blog</a></li>
+                <li><a class="nav-link" target="_blank" href="https://jacobrowlandblog.wordpress.com/" id="blog-link"><i class="fa-solid fa-blog"></i> Blog</a></li>
                 <li><a class="nav-link" target="_blank" href="https://www.linkedin.com/in/jacob-rowland-197821193/" id="linkedin-link"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
             </ul>    
         </section>
-
-        <div class="modal-outer display-none" id="qr-code-project-modal">
-            <div class="modal-inner">
-                <div class="modal-top">
-                    <h2>QR Code Detector</h2>
-                    <a onclick="hideModal('qr-code-project-modal')" class="btn no-border btn-large cursor-point"><i class="fa-solid fa-xmark"></i></a>
+        <div id="modals">
+            <div class="modal-outer display-none" id="qr-code-project-modal">
+                <div class="modal-inner">
+                    <div class="modal-top">
+                        <h2>QR Code Detector</h2>
+                        <a onclick="hideModal('qr-code-project-modal')" class="btn no-border btn-large cursor-point"><i class="fa-solid fa-xmark"></i></a>
+                    </div>
+                    <img src="images/qr-code-detector.jpg">
+                    <p>This assignment for COMPSCI 373 Computer Graphics and Image Processing at The University of Auckland involved developing a QR Code Detector from scratch in Python using only NumPy to import the image.
+                        In the process I gained an understanding of image processing techniques such as morphological operations, segmentation
+                        and connected component analysis. Several extensions where also incorporated
+                        including the implementation of an adaptive thresholding algorithm, as well as, ensuring the detector worked correctly on 
+                        rotated images.
+    
+                        My solution and its associated report was selected as one of the top three out of a class of more than 200.
+                        </p>
+                    <a href="https://github.com/jacrowland/" class="btn no-border btn-center" target="_blank"> View on Github  <i class="fas fa-chevron-right"></i></a>
                 </div>
-                <img src="images/qr-code-detector.jpg">
-                <p>This assignment for COMPSCI 373 Computer Graphics and Image Processing at The University of Auckland involved developing a QR Code Detector from scratch in Python using only NumPy to import the image.
-                    In the process I gained an understanding of image processing techniques such as morphological operations, segmentation
-                    and connected component analysis. Several extensions where also incorporated
-                    including the implementation of an adaptive thresholding algorithm, as well as, ensuring the detector worked correctly on 
-                    rotated images.
-
-                    My solution and its associated report was selected as one of the top three out of a class of more than 200.
+            </div>
+            <div class="modal-outer display-none" id="visairo-ready-project-modal">
+                <div class="modal-inner">
+                    <div class="modal-top">
+                        <h2>Visairo Ready</h2>
+                        <a onclick="hideModal('visairo-ready-project-modal')" class="btn no-border btn-large cursor-point"><i class="fa-solid fa-xmark"></i></a>
+                    </div>
+                    <video width="550" controls>
+                        <source src="videos\VisairoReadyShowcase.m4v" type="video/mp4">
+                    </video>
+                    <p>
+                        As a Marketing Intern at Fisher & Paykel Healthcare™ I developed Visairo™ Ready, a two-part online course, aimed at getting hospital staff ready for the
+                        introduction of the mask in their respiratory unit. The course was created using existing and new materials that I created. 
+                        This included wireframing page concepts, writing scripts and storyboarding video content, and prototyping and developing interactive game-like experiences.
+                        <br><br>
+                        <strong>Tools used: </strong> Adobe XD, Davinci Resolve, Blender, Articulate 360
                     </p>
-                <a href="https://github.com/jacrowland/" class="btn no-border btn-center" target="_blank"> View on Github  <i class="fas fa-chevron-right"></i></a>
-            </div>
-        </div>
-
-        <div class="modal-outer display-none" id="visairo-ready-project-modal">
-            <div class="modal-inner">
-                <div class="modal-top">
-                    <h2>Visairo Ready</h2>
-                    <a onclick="hideModal('visairo-ready-project-modal')" class="btn no-border btn-large cursor-point"><i class="fa-solid fa-xmark"></i></a>
+                    <a href="https://www.fphcare.com/nz/hospital/adult-respiratory/noninvasive-ventilation/visairo/" class="btn no-border btn-center" target="_blank"> Get Visairo Ready  <i class="fas fa-chevron-right"></i></a>
                 </div>
-                <video width="550" controls>
-                    <source src="videos\VisairoReadyShowcase.m4v" type="video/mp4">
-                </video>
-                <p>
-                    As a Marketing Intern at Fisher & Paykel Healthcare™ I developed Visairo™ Ready, a two-part online course, aimed at getting hospital staff ready for the
-                    introduction of the mask in their respiratory unit. The course was created using existing and new materials that I created. 
-                    This included wireframing page concepts, writing scripts and storyboarding video content, and prototyping and developing interactive game-like experiences.
-                    <br><br>
-                    <strong>Tools used: </strong> Adobe XD, Davinci Resolve, Blender, Articulate 360
-                </p>
-                <a href="https://www.fphcare.com/nz/hospital/adult-respiratory/noninvasive-ventilation/visairo/" class="btn no-border btn-center" target="_blank"> Get Visairo Ready  <i class="fas fa-chevron-right"></i></a>
             </div>
-        </div>
-
-
+        </div>  
     </main>
 </body>
 <footer>
