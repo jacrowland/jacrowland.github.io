@@ -49,6 +49,14 @@ body {
     border: 2px solid var(--secondary-color);
 }
 
+#scroll-to-top-btn {
+    position:fixed;
+    right: 0;
+    bottom: 0;
+    margin: 20px 20px;
+    z-index: 10;
+    font-size: small;
+}
 
 .nav-link {
     text-decoration: none;

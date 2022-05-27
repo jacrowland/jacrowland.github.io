@@ -18,7 +18,7 @@
     <link rel="manifest" href="/site.webmanifest">
 </head>
 <body>
-    <header>
+    <header id="header">
         <nav id="navbar">
             <p><a class="nav-link name" href="#welcome-section">JACOB ROWLAND</a></p>
             <ul id="nav-section-links">
@@ -36,7 +36,7 @@
     <main>
         <section id="welcome-section">
             <div id="welcome-section-bg-video">
-                <video autoplay="autoplay" loop="true" controls>
+                <video autoplay muted loop="true">
                     <source src="videos/hero-video.mp4" type="video/mp4"/>"
                 </video>
             </div>
@@ -52,7 +52,6 @@
                 through cycling or the gym. I also enjoy gaming, virtual reality, reading, writing, and
                 op-shopping with friends.
             </p>
-                
         </section>
         <section id="projects">
             <h2>Project Showcase</h2>
@@ -158,6 +157,7 @@
             </div>
         </div>  
     </main>
+    <a id="scroll-to-top-btn" href="#welcome-section" class="btn"><i class="fa-solid fa-angle-up"></i></a>
 </body>
 <footer>
     <p><i class="fa-solid fa-copyright"></i> Copyright 2022</p>
@@ -166,10 +166,18 @@
 
 
 <script>
+
 const displayModal = (id) => {document.getElementById(id).classList.remove('display-none');};
 const hideModal = (id) => {
     document.getElementById(id).classList.add('display-none');
     document.querySelectorAll('video').forEach(video => video.pause());
 }
+
+var prevScrollYAmount = 0;
+document.addEventListener("scroll", (e) => {
+    document.getElementById("header").style.display =  window.pageYOffset > prevScrollYAmount && window.pageYOffset > window.innerHeight ? "none" : "unset";
+    document.getElementById("scroll-to-top-btn").style.display = window.pageYOffset > (window.innerHeight / 100 * 10) ? "unset" : "none";
+    prevScrollYAmount = window.pageYOffset;
+});
 </script>
 </html>
