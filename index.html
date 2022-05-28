@@ -72,12 +72,12 @@
                         <h3 class="project-title">F&P Healthcare™ Visairo™ Ready</h3>
                     </a>
                 </div>
-                <div class="project-tile" id="genectic-algorithm-project">
-                    <a target="_blank" href="https://github.com/jacrowland/genetic-algorithm">
+                <div class="project-tile" id="red-queen-project">
+                    <a onclick="displayModal('red-queen-project-modal')">
                         <div class="project-image">
-                            <img src="https://www.researchgate.net/profile/Peter-Bentley-4/publication/221530990/figure/fig4/AS:668838282686488@1536474881907/Binary-string-is-split-into-sequence-and-next-time-segments.ppm">
+                            <img src="http://jacobrowland.me/red-queen/images/profile.jpg">
                         </div>
-                        <h3 class="project-title">Genetic Algorithm</h3>
+                        <h3 class="project-title">Red Queen Discord.js Bot</h3>
                     </a>
                 </div>
                 <div class="project-tile" id="naive-bayes-project">
@@ -88,20 +88,20 @@
                         <h3 class="project-title">Multinominal Naive Bayes Classifier</h3>
                     </a>
                 </div>
-                <div class="project-tile" id="tablau-project">
-                    <a target="_blank" href="https://public.tableau.com/app/profile/anna.creahan7057/viz/Group20/Infographic">
+                <div class="project-tile" id="visual-novel-project">
+                    <a onclick="displayModal('visual-novel-project-modal')">
                         <div class="project-image">
-                            <img src="images/tablau-thumbnail.jpg">
+                            <img src="images/visual-novel-thumbnail.jpg">
                         </div>
-                        <h3 class="project-title">Poverty in New Zealand Infographic</h3>
+                        <h3 class="project-title">Python Visual Novel Game</h3>
                     </a>
                 </div>
                 <div class="project-tile" id="house-hunt-project">
-                    <a target="_blank" href="https://github.com/jacrowland/house-hunt">
+                    <a onclick="displayModal('house-hunt-project-modal')"">
                         <div class="project-image">
-                            <img src="https://images.pexels.com/photos/273209/pexels-photo-273209.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                            <img src="https://raw.githubusercontent.com/jacrowland/house-hunt/master/images/cover.jpg">
                         </div>
-                        <h3 class="project-title">Real Estate Web Application</h3>
+                        <h3 class="project-title">House Hunt Web App</h3>
                     </a>
                 </div>
             </div>
@@ -133,7 +133,7 @@
     
                         My solution and its associated report was selected as one of the top three out of a class of more than 200.
                         </p>
-                    <a href="https://github.com/jacrowland/" class="btn no-border btn-center" target="_blank"> View on Github  <i class="fas fa-chevron-right"></i></a>
+                    <a href="https://github.com/jacrowland/" class="btn no-border btn-center" target="_blank"> Visit the Github repository  <i class="fas fa-chevron-right"></i></a>
                 </div>
             </div>
             <div class="modal-outer display-none" id="visairo-ready-project-modal">
@@ -147,12 +147,69 @@
                     </video>
                     <p>
                         As a Marketing Intern at Fisher & Paykel Healthcare™ I developed Visairo™ Ready, a two-part online course, aimed at getting hospital staff ready for the
-                        introduction of the mask in their respiratory unit. The course was created using existing and new materials that I created. 
-                        This included wireframing page concepts, writing scripts and storyboarding video content, and prototyping and developing interactive game-like experiences.
-                        <br><br>
-                        <strong>Tools used: </strong> Adobe XD, Davinci Resolve, Blender, Articulate 360
+                        introduction of the mask in their respiratory unit. The course was created using existing and new materials.
+                        Tasks involved in the creation of the courses included wireframing page concepts, writing scripts and storyboarding video content, and prototyping and developing interactive game-like experiences.
+                        Tools used to create the modules included Adobe XD, Davinci Resolve, Blender and Articulate 360.
                     </p>
                     <a href="https://www.fphcare.com/nz/hospital/adult-respiratory/noninvasive-ventilation/visairo/" class="btn no-border btn-center" target="_blank"> Get Visairo Ready  <i class="fas fa-chevron-right"></i></a>
+                    <p style="font-size: smaller; opacity: 0.5;">Note: The website signing up to a F&P Education Hub account</p>
+                </div>
+            </div>
+            <div class="modal-outer display-none" id="red-queen-project-modal">
+                <div class="modal-inner">
+                    <div class="modal-top">
+                        <h2>Red Queen Discord.js Bot</h2>
+                        <a onclick="hideModal('red-queen-project-modal')" class="btn no-border btn-large cursor-point"><i class="fa-solid fa-xmark"></i></a>
+                    </div>
+                    <img style="height: 250px ;object-fit: cover;" src="https://raw.githubusercontent.com/jacrowland/red-queen/master/docs/images/music.JPG">
+                    <p>
+                        Red Queen was a Discord bot developed using a combination of node.js and discord.js. It offered many features including streaming youtube videos into voice channels, image search and retrieval, 8-ball and more.
+                        The name is a reference to the Red Queen Artificial Intelligence from the live-action Resident Evil films. A supercomputer that controls the secret underground Umbrella Corporation lab (and is a bit on the sinister side).
+                        As of January 2020 Red Queen is no longer updated or hosted. As changes to the Youtube Data API v3 prevent bots from streaming music.
+                        However, you can still visit the website to learn more about the features the bot offered.
+                    </p>
+                    <div style="margin: 15px auto">
+                        <a href="http://jacobrowland.me/red-queen/index.html" class="btn no-border btn-center" target="_blank"> Visit the website  <i class="fas fa-chevron-right"></i></a>
+                        <a href="https://github.com/jacrowland/red-queen" class="btn no-border btn-center" target="_blank"> Visit the Github repository  <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-outer display-none" id="house-hunt-project-modal">
+                <div class="modal-inner">
+                    <div class="modal-top">
+                        <h2>House Hunt Web Application</h2>
+                        <a onclick="hideModal('house-hunt-project-modal')" class="btn no-border btn-large cursor-point"><i class="fa-solid fa-xmark"></i></a>
+                    </div>
+                    <img style="height: 250px ;object-fit: cover;" src="https://raw.githubusercontent.com/jacrowland/house-hunt/master/images/cover.jpg">
+                    <p>
+                        House Hunt is a web application built using HTML, CSS, Bootstrap and JS. It uses Google's Firebase and Firestore services to host a document based database of properties for users to upload and view.
+                        It features user authentication, submitting properties, viewing properties, and managing of the user's profile and submissions.
+                    </p>
+                    <div style="margin: 15px auto">
+                        <a href="http://jacobrowland.me/house-hunt/index.html" class="btn no-border btn-center" target="_blank"> Visit the website  <i class="fas fa-chevron-right"></i></a>
+                        <a href="https://github.com/jacrowland/house-hunt" class="btn no-border btn-center" target="_blank"> Visit the Github repository  <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-outer display-none" id="visual-novel-project-modal">
+                <div class="modal-inner">
+                    <div class="modal-top">
+                        <h2>Python Visual Novel Game</h2>
+                        <a onclick="hideModal('visual-novel-project-modal')" class="btn no-border btn-large cursor-point"><i class="fa-solid fa-xmark"></i></a>
+                    </div>
+                    <video width="550" controls>
+                        <source src="videos\My Date With Math Chan Showcase.m4v" type="video/mp4">
+                    </video>
+                    <p>
+                        My Date With Math Chan is a short visual novel game built using <a class="nav-link" href="https://www.renpy.org/">RenPy</a> - a framework for building visual novels in Python. 
+                        This project showcases Python scripting, image manipulation and non-linear storytelling.
+
+                        This game was created as a creative work for MATH 102 at The University of Auckland in 2019.
+                    </p>
+                    <div style="margin: 15px auto">
+                        <a href="https://github.com/jacrowland/mydatewithmathchan/releases/tag/release" class="btn no-border btn-center" target="_blank"> Download <i class="fas fa-download"></i></a>
+                        <a href="https://github.com/jacrowland/mydatewithmathchan" class="btn no-border btn-center" target="_blank"> Visit the Github repository  <i class="fas fa-chevron-right"></i></a>
+                    </div>
                 </div>
             </div>
         </div>  
@@ -163,10 +220,7 @@
     <p><i class="fa-solid fa-copyright"></i> Copyright 2022</p>
     <a style="font-size: smaller" href="https://github.com/jacrowland/jacrowland.github.io" class="nav-link">View this project on Github</a>
 </footer>
-
-
 <script>
-
 const displayModal = (id) => {document.getElementById(id).classList.remove('display-none');};
 const hideModal = (id) => {
     document.getElementById(id).classList.add('display-none');
