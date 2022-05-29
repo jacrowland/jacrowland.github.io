@@ -36,7 +36,7 @@
     <main>
         <section id="welcome-section">
             <div id="welcome-section-bg-video">
-                <video autoplay muted loop="true">
+                <video autoplay muted loop="true" id="hero-bg-video">
                     <source src="videos/hero-video.mp4" type="video/mp4"/>"
                 </video>
             </div>
@@ -224,7 +224,7 @@
 const displayModal = (id) => {document.getElementById(id).classList.remove('display-none');};
 const hideModal = (id) => {
     document.getElementById(id).classList.add('display-none');
-    document.querySelectorAll('video').forEach(video => video.pause());
+    document.querySelectorAll('video').forEach(video => video.id != "hero-bg-video" ? video.pause() : null);
 }
 
 var prevScrollYAmount = 0;
