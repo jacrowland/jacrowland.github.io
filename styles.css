@@ -51,6 +51,7 @@ body {
 
 #scroll-to-top-btn {
     position:fixed;
+    display: none;
     right: 0;
     bottom: 0;
     margin: 20px 20px;
@@ -75,22 +76,6 @@ header {
     --header-height: 80px;
 }
 
-#navbar p {
-    color: var(--primary-color);
-    border: 2px solid var(--primary-color);
-    padding: 7.8px 15px;
-    font-weight: bolder;
-}
-
-#navbar p:hover {
-    border: 2px solid var(--secondary-color);
-    transition: 0.2s ease-in-out;
-}
-
-#navbar p:hover > a {
-    color: var(--secondary-color);
-}
-
 #navbar {
     z-index: 3;
     background-color: var(--background-color);
@@ -107,6 +92,24 @@ header {
     -webkit-box-shadow: 0px -10px 50px 5px var(--box-shadow-color);
     -moz-box-shadow: 0px -10px 50px 5px var(--box-shadow-color);
     box-shadow: 0px -10px 50px 5px var(--box-shadow-color);
+    transition: 0.3s ease-in-out;
+
+}
+
+#navbar p {
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    padding: 7.8px 15px;
+    font-weight: bolder;
+}
+
+#navbar p:hover {
+    border: 2px solid var(--secondary-color);
+    transition: 0.2s ease-in-out;
+}
+
+#navbar p:hover > a {
+    color: var(--secondary-color);
 }
 
 #navbar ul {
@@ -249,7 +252,7 @@ section h2 {
 
 .project-tile {
     height: 350px;
-    width: 385px;
+    width: 350px;
     transition: 0.2s ease-in-out;
     background-color: var(--background-secondary-color);
 }
@@ -423,6 +426,7 @@ footer {
     cursor: pointer;
 }
 
+
 @media screen and (max-width: 1300px) {
     .project-tiles {
         grid-template-columns: auto auto;
@@ -439,9 +443,10 @@ footer {
 
 @media screen and (max-height: 850px) {
     .modal-inner img, .modal-inner video {
-        display: none;
+        display: unset;
      }
 }
+
 
 @media screen and (max-width: 900px) {
     #navbar p, #navbar > #nav-social-links {
@@ -458,14 +463,27 @@ footer {
         align-items: center;
     }
 
+    .modal-outer {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
     .modal-inner {
-        width: 100vw;
-        margin: 0 50px;
-        height: 100vh;
+        height: 70vh;
+        overflow-y: scroll;
         margin: 10px;
+        justify-content:stretch;
+    }
+
+    .modal-inner > div:last-child {
+        display: flex;
+        flex-direction: column;
     }
 
     .modal-inner img, .modal-inner video {
-       display: none;
+        height: 200px;
+        max-width: 90%;
+        width: auto;
     }
 }
