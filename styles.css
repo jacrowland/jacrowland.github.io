@@ -31,20 +31,27 @@ body {
     font-style: italic
 }
 
-.btn {
+.btn, button {
     color: var(--primary-color);
     text-decoration: none;
     padding: 20px;
     border: 2px solid var(--primary-color);
     border-radius: 10px;
     transition: 0.2s ease-in-out;
+    background-color: unset;
+}
+
+
+.btn-md {
+    font-size: 1.12rem;
 }
 
 .btn-large {
     font-size: 2rem;
 }
 
-.btn:hover {
+.btn:hover, button:hover {
+    cursor: pointer;
     color: var(--secondary-color);
     border: 2px solid var(--secondary-color);
 }
@@ -176,7 +183,7 @@ section {
     color: var(--primary-color);
 }
 
-#about-section {
+#about {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -184,7 +191,7 @@ section {
     background-color: var(--background-secondary-color);
 }
 
-#about-section p {
+#about p {
     width: 60%;
     border: 5px solid var(--primary-color);
     display: flex;
@@ -308,7 +315,7 @@ section h2 {
 }
 
 
-#contact-section {
+#contact {
     display: flex;
     height: 750px;
     flex-direction: column;
@@ -317,26 +324,26 @@ section h2 {
     background-color: var(--background-secondary-color);
 }
 
-#contact-section h2 {
+#contact h2 {
     border: unset !important;
     font-size: 3rem;
     margin: 0;
 }
 
-#contact-section p {
+#contact p {
     margin-top: 15px;
     font-size: 1.15rem;
     color: var(--secondary-color);
 }
 
 
-#contact-section ul {
+#contact ul {
     list-style: none;
     display: flex;
     padding-inline-start: 0px;
 }
 
-#contact-section ul li {
+#contact ul li {
     margin: 0;
     padding: 30px;
     font-size: 1.25rem;
@@ -434,7 +441,7 @@ footer {
     .profile-image {
         display: none;
     }
-    #about-section p {
+    #about p {
         border-left: 5px solid var(--primary-color);
         margin: 0;
         padding: 50px;
@@ -457,7 +464,7 @@ footer {
         grid-template-columns: auto;
     }
 
-    #contact-section ul {
+    #contact ul {
         flex-direction: column;
         justify-content: center;
         align-items: center;
