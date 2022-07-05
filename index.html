@@ -96,7 +96,15 @@
                         <h3 class="project-title">F&P Healthcare™ Visairo™ Ready</h3>
                     </a>
                 </div>
-                <div class="project-tile" id="naive-bayes-project">
+                <div class="project-tile" id="wolf3d-project">
+                    <a target="_blank" onclick="displayModal('wolf3d-modal')" class="cursor-point">
+                        <div class="project-image">
+                            <img src="images/wolf3de1m1.png">
+                        </div>
+                        <h3 class="project-title">Unity Wolf3D E1M1 Remake</h3>
+                    </a>
+                </div>
+                <div class="project-tile display-none" id="naive-bayes-project">
                     <a target="_blank" href="https://github.com/jacrowland/naive-bayes">
                         <div class="project-image">
                             <img src="https://www.sciencenews.org/wp-content/uploads/2016/05/052816_bayesian-opener_free.jpg">
@@ -151,6 +159,25 @@
             </ul>    
         </section>
         <div id="modals">
+            <div class="modal-outer display-none" id="wolf3d-modal">
+                <div class="modal-inner">
+                    <div class="modal-top">
+                        <h2>Unity Wolfenstein3D E1M1 Remake</h2>
+                        <a onclick="hideModal('url-shortener-modal')" class="btn no-border btn-large cursor-point"><i class="fa-solid fa-xmark"></i></a>
+                    </div>
+                    <img src="images/wolf3de1m1.png">
+                    <p>
+                        Using the Unity Game Engine I remade the first level  (with some tweaks) from the iconic 1992 title Wolfenstein3D. This project was taken to weave together multiple aspects
+                        of the game development process that I had been learning including basic 3D modelling, animation, AI, C# scripting and more.
+                        The level features two enemies including a guard and dog. Both use a finite state machine to intelligently switch between states to guide behaviour. 
+                        For example, an idle guard will switch to the chase state when a player wonders into their field of view. Other features include full rotational movement, multiple pickup types
+                        , as well as, four distinct weapons (from the original game). These include the knife and pistol (on the player by default), as well as,
+                        the machine gun and barrel gun which are hidden in secret areas.
+                    </p>
+                    <div style="margin: 15px auto">
+                        <a href="https://jacobrowland.itch.io/e1m1" class="btn no-border btn-center" target="_blank"> Play the game  <i class="fas fa-chevron-right"></i></a>
+                    </div>                </div>
+            </div>
             <div class="modal-outer display-none" id="url-shortener-modal">
                 <div class="modal-inner">
                     <div class="modal-top">
