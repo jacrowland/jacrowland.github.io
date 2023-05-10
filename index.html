@@ -1,65 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Jacob Rowland | Personal Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="UTF-8"/>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
-      crossorigin="anonymous"
-    />
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-</head>
-<body>
-    <header id="header">
-        <nav id="navbar">
-            <p><a class="nav-link name" href="#welcome-section">JACOB ROWLAND</a></p>
-            <ul id="nav-section-links">
-                <li><a class="nav-link" href="#about">About</a></li>
-                <li><a class="nav-link" href="#projects">Projects</a></li>
-                <li><a class="nav-link" href="#contact">Contact</a></li>
-            </ul>
-            <ul id="nav-social-links">
-                <li><a class="nav-link" target="_blank" href="https://github.com/jacrowland/"><i class="fab fa-github"></i></a></li>
-                <li><a class="nav-link" target="_blank" href="mailto:jacob.rowland@hotmail.com"><i class="fa-solid fa-envelope"></i></a></li>
-                <li><a class="nav-link" target="_blank" href="https://www.linkedin.com/in/jacob-rowland-197821193/"><i class="fa-brands fa-linkedin"></i></a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="welcome-section">
-            <div id="welcome-section-bg-video">
-                <video autoplay muted loop="true" id="hero-bg-video">
-                    <source src="videos/hero-video.mp4" type="video/mp4"/>"
-                </video>
-            </div>
-            <h1>Jacob Rowland</h1>
-            <p>Software Developer @ Smart Parking Limited</p>
-            <a href="#about" class="btn"><i class="fa-solid fa-angle-down"></i></a>
-        </section>
-        <section id="about">
-            <img alt="profile picture" class="profile-image" src="https://avatars.githubusercontent.com/u/19786078?v=4">
-            <p class="bold"><!--Hi, I am Jacob and I am recent graduate from The University of Auckland looking for hybrid and remote positions in full stack web development, software engineering, data science or marketing. I am a
-                passionate and hard-working young professional who works well in a team. I am driven to learn new
-                skills quickly while working on interesting projects. Outside of work I enjoy regular exercise - be that
-                through cycling or the gym. I also enjoy gaming, virtual reality, reading, writing, and
-                op-shopping with friends.-->
-                Hi, I'm Jacob and I am a Junior Software Developer at Smart Parking Limited based in Auckland, New Zealand. After graduating with a Bachelor of Commerce and Bachelor of Science in Computer Science, Information Systems and Marketing from The University of Auckland
-                I have decided to take the plunge into designing IoT cloud solutions to build up the future of our smart cities. My main interests are in Full Stack Developement, Cloud Services, IoT and Machine Learning. Outside of work I enjoy regular exercise - be that
-                through cycling or the gym. I also enjoy gaming, virtual reality, reading, writing, and op-shopping with friends.
-            </p>
-        </section>
-        <section id="projects">
-            <h2>Project Showcase</h2>
-            <div class="project-tiles">
-                <div class="project-tile" id="url-shortener-project">
+    <head>
+        <title>Jacob Rowland</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <meta name="description" content="Jacob Rowland's projects">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+            integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+    </head>
+    <body>
+        <header id="header">
+            <nav id="navbar">
+                <h1>JACOB ROWLAND</h1>
+                <ul id="nav-social-links">
+                    <li><a class="nav-link" target="_blank" href="https://github.com/jacrowland/"><i
+                                class="fab fa-github"></i></a></li>
+                    <li><a class="nav-link" target="_blank" href="mailto:jacob.rowland@hotmail.com"><i
+                                class="fa-solid fa-envelope"></i></a></li>
+                    <li><a class="nav-link" target="_blank" href="https://www.linkedin.com/in/jacob-rowland-197821193/"><i
+                                class="fa-brands fa-linkedin"></i></a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="projects">
+                <div class="project-tiles">
+                    <div class="project-tile" id="qr-code-project">
+                        <a target="_blank" onclick="displayModal('qr-code-project-modal')" class="cursor-point">
+                            <div class="project-image">
+                                <img src="images/qr-code-detector-thumbnail.jpg">
+                            </div>
+                            <h3 class="project-title">Python QR Code Detector</h3>
+                        </a>
+                    </div>
+                    <div target="_blank" class="project-tile" id="visairo-ready-project">
+                        <a onclick="displayModal('visairo-ready-project-modal')" class="cursor-point">
+                            <div class="project-image">
+                                <img src="https://resources.fphcare.com/content/rt076-and-caregiver.jpg">
+                            </div>
+                            <h3 class="project-title">F&P Healthcare™ Visairo™ Ready</h3>
+                        </a>
+                    </div>
+                    <div class="project-tile" id="wolf3d-project">
+                        <a target="_blank" onclick="displayModal('wolf3d-modal')" class="cursor-point">
+                            <div class="project-image">
+                                <img src="images/wolf3de1m1.png">
+                            </div>
+                            <h3 class="project-title">Unity Wolf3D E1M1 Remake</h3>
+                        </a>
+                    </div>
+                    <div class="project-tile" id="naive-bayes-project">
+                        <a target="_blank" href="https://github.com/jacrowland/naive-bayes">
+                            <div class="project-image">
+                                <img
+                                    src="https://www.sciencenews.org/wp-content/uploads/2016/05/052816_bayesian-opener_free.jpg">
+                            </div>
+                            <h3 class="project-title">Multinominal Naive Bayes Classifier</h3>
+                        </a>
+                    </div>
+                    <div class="project-tile" id="50kflatmate-project">
+                        <a target="_blank" onclick="displayModal('50kflatmate-modal')" class="cursor-point">
+                            <div class="project-image">
+                                <img src="images/50kflatmate-thumbnail.jpg">
+                            </div>
+                            <h3 class="project-title">50kflatmate Updates Twitter Bot</h3>
+                        </a>
+                    </div>
+                    <div class="project-tile" id="red-queen-project">
+                        <a onclick="displayModal('red-queen-project-modal')">
+                            <div class="project-image">
+                                <img src="http://jacobrowland.me/red-queen/images/profile.jpg">
+                            </div>
+                            <h3 class="project-title">Red Queen Discord.js Bot</h3>
+                        </a>
+                    </div>
+                    <div class="project-tile display-none" id="visual-novel-project">
+                        <a onclick="displayModal('visual-novel-project-modal')">
+                            <div class="project-image">
+                                <img src="images/visual-novel-thumbnail.jpg">
+                            </div>
+                            <h3 class="project-title">Python Visual Novel Game</h3>
+                        </a>
+                    </div>
+                    <div class="project-tile display-none" id="house-hunt-project">
+                        <a onclick="displayModal('house-hunt-project-modal')"">
+                            <div class=" project-image">
+                            <img src="images/house-hunt-thumbnail.jpg">
+                    </div>
+                    <h3 class="project-title">House Hunt Web App</h3>
+                    </a>
+                </div>
+                <div class="project-tile display-none" id="url-shortener-project">
                     <a target="_blank" onclick="displayModal('url-shortener-modal')" class="cursor-point">
                         <div class="project-image">
                             <img src="images/url-shortener-thumbnail.jpg">
@@ -67,7 +104,7 @@
                         <h3 class="project-title">URL Shortener Microservice</h3>
                     </a>
                 </div>
-                <div class="project-tile" id="pomodoro-timer-project">
+                <div class="project-tile display-none" id="pomodoro-timer-project">
                     <a target="_blank" onclick="displayModal('pomodoro-timer-modal')" class="cursor-point">
                         <div class="project-image">
                             <img src="images/pomodoro-timer-thumbnail.jpg">
@@ -75,7 +112,7 @@
                         <h3 class="project-title">React Pomodoro Timer</h3>
                     </a>
                 </div>
-                <div class="project-tile" id="react-redux-calculator-project">
+                <div class="project-tile display-none" id="react-redux-calculator-project">
                     <a target="_blank" onclick="displayModal('react-redux-calculator-modal')" class="cursor-point">
                         <div class="project-image">
                             <img src="images/react-redux-calculator-thumbnail.jpg">
@@ -83,304 +120,314 @@
                         <h3 class="project-title">React Redux Calculator</h3>
                     </a>
                 </div>
-                <div class="project-tile" id="qr-code-project">
-                    <a target="_blank" onclick="displayModal('qr-code-project-modal')" class="cursor-point">
-                        <div class="project-image">
-                            <img src="images/qr-code-detector-thumbnail.jpg">
-                        </div>
-                        <h3 class="project-title">Python QR Code Detector</h3>
-                    </a>
                 </div>
-                <div target="_blank" class="project-tile" id="visairo-ready-project">
-                    <a onclick="displayModal('visairo-ready-project-modal')" class="cursor-point">
-                        <div class="project-image">
-                            <img src="https://resources.fphcare.com/content/rt076-and-caregiver.jpg">
+                <a href="https://github.com/jacrowland/" class="btn display-none" target="_blank">View more on Github<i
+                        class="fas fa-chevron-right"></i></a><br>
+                <button onclick="displayHiddenProjects()" class="btn btn-md" id="view-more-projects-btn">View more <i
+                        class="fas fa-chevron-right"></i></button>
+            </section>
+            <div id="modals">
+                <div class="modal-outer display-none" id="wolf3d-modal">
+                    <div class="modal-inner">
+                        <div class="modal-top">
+                            <h2>Unity Wolfenstein3D E1M1 Remake</h2>
+                            <a onclick="hideModal('wolf3d-modal')" class="btn no-border btn-large cursor-point"><i
+                                    class="fa-solid fa-xmark"></i></a>
                         </div>
-                        <h3 class="project-title">F&P Healthcare™ Visairo™ Ready</h3>
-                    </a>
-                </div>
-                <div class="project-tile" id="wolf3d-project">
-                    <a target="_blank" onclick="displayModal('wolf3d-modal')" class="cursor-point">
-                        <div class="project-image">
-                            <img src="images/wolf3de1m1.png">
-                        </div>
-                        <h3 class="project-title">Unity Wolf3D E1M1 Remake</h3>
-                    </a>
-                </div>
-                <div class="project-tile display-none" id="naive-bayes-project">
-                    <a target="_blank" href="https://github.com/jacrowland/naive-bayes">
-                        <div class="project-image">
-                            <img src="https://www.sciencenews.org/wp-content/uploads/2016/05/052816_bayesian-opener_free.jpg">
-                        </div>
-                        <h3 class="project-title">Multinominal Naive Bayes Classifier</h3>
-                    </a>
-                </div>
-                <div class="project-tile display-none" id="50kflatmate-project">
-                    <a target="_blank" onclick="displayModal('50kflatmate-modal')" class="cursor-point">
-                        <div class="project-image">
-                            <img src="images/50kflatmate-thumbnail.jpg">
-                        </div>
-                        <h3 class="project-title">50kflatmate Updates Twitter Bot</h3>
-                    </a>
-                </div>
-                <div class="project-tile display-none" id="red-queen-project">
-                    <a onclick="displayModal('red-queen-project-modal')">
-                        <div class="project-image">
-                            <img src="http://jacobrowland.me/red-queen/images/profile.jpg">
-                        </div>
-                        <h3 class="project-title">Red Queen Discord.js Bot</h3>
-                    </a>
-                </div>
-                <!--<div class="project-tile display-none" id="visual-novel-project">
-                    <a onclick="displayModal('visual-novel-project-modal')">
-                        <div class="project-image">
-                            <img src="images/visual-novel-thumbnail.jpg">
-                        </div>
-                        <h3 class="project-title">Python Visual Novel Game</h3>
-                    </a>
-                </div>
-               <div class="project-tile display-none" id="house-hunt-project">
-                    <a onclick="displayModal('house-hunt-project-modal')"">
-                        <div class="project-image">
-                            <img src="images/house-hunt-thumbnail.jpg">
-                        </div>
-                        <h3 class="project-title">House Hunt Web App</h3>
-                    </a>
-                </div>-->
-            </div>
-            <a href="https://github.com/jacrowland/" class="btn display-none" target="_blank">View more on Github<i class="fas fa-chevron-right"></i></a><br>
-            <button onclick="displayHiddenProjects()" class="btn btn-md" id="view-more-projects-btn">View more <i class="fas fa-chevron-right"></i></button>
-        </section>
-        <section id="contact">
-            <h2>Please get in touch </h2>
-            <p class="italic">Find me at the following links </p>
-            <ul>
-                <li><a class="nav-link" target="_blank" href="https://github.com/jacrowland/" id="profile-link"><i class="fab fa-github"></i> Github</a></li>
-                <li><a class="nav-link" target="_blank" href="mailto:jacob.rowland@hotmail.com" id="email-link"><i class="fa-solid fa-envelope"></i> Send an email</a></li>
-                <li><a class="nav-link" target="_blank" href="https://jacobrowlandblog.wordpress.com/" id="blog-link"><i class="fa-solid fa-blog"></i> Blog</a></li>
-                <li><a class="nav-link" target="_blank" href="https://www.linkedin.com/in/jacob-rowland-197821193/" id="linkedin-link"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
-            </ul>    
-        </section>
-        <div id="modals">
-            <div class="modal-outer display-none" id="wolf3d-modal">
-                <div class="modal-inner">
-                    <div class="modal-top">
-                        <h2>Unity Wolfenstein3D E1M1 Remake</h2>
-                        <a onclick="hideModal('wolf3d-modal')" class="btn no-border btn-large cursor-point"><i class="fa-solid fa-xmark"></i></a>
-                    </div>
-                    <img src="images/wolf3de1m1.png">
-                    <p>
-                        Using the Unity Game Engine I remade the first level  (with some tweaks) from the iconic 1992 title Wolfenstein3D. This project was taken to weave together multiple aspects
-                        of the game development process that I had been learning including basic 3D modelling, animation, AI, C# scripting and more.
-                        The level features two enemies including a guard and dog. Both use a finite state machine to intelligently switch between states to guide behaviour. 
-                        For example, an idle guard will switch to the chase state when a player wonders into their field of view. Other features include full rotational movement, multiple pickup types
-                        , as well as, four distinct weapons (from the original game). These include the knife and pistol (on the player by default), as well as,
-                        the machine gun and barrel gun which are hidden in secret areas.
-                    </p>
-                    <div style="margin: 15px auto">
-                        <a href="https://jacobrowland.itch.io/e1m1" class="btn no-border btn-center" target="_blank"> Play the game  <i class="fas fa-chevron-right"></i></a>
-                    </div>                </div>
-            </div>
-            <div class="modal-outer display-none" id="url-shortener-modal">
-                <div class="modal-inner">
-                    <div class="modal-top">
-                        <h2>URL Shortener Microservice</h2>
-                        <a onclick="hideModal('url-shortener-modal')" class="btn no-border btn-large cursor-point"><i class="fa-solid fa-xmark"></i></a>
-                    </div>
-                    <img src="images/url-shortener-thumbnail.jpg">
-                    <p>
-                        The URL Shortener Microservice was built in Javascript using the Express backend API framework, Mongoose, MongoDB Atlas (the hosted NOSQL document database) and Google's App Engine for deployment.
-                        The service allows a user to POST a URL to the API which returns JSON containing a shortened URL ID. This ID can then be appended to the URL shortener's URL to create a GET request that
-                        redirects the user to the original URL. This works by saving a document to the database which can then be used to look-up the returned ID.
-                        <br><br>e.g. [app url]/api/shorturl/931774092 will redirect to https://www.google.com<br>
-                    </p>
-                    <div style="margin: 15px auto">
-                        <a href="https://url-shortener-352411.ts.r.appspot.com/" class="btn no-border btn-center" target="_blank"> Visit the website  <i class="fas fa-chevron-right"></i></a>
-                        <a href="https://github.com/jacrowland/url-shortener-microservice" class="btn no-border btn-center" target="_blank"> Visit the Github repository  <i class="fas fa-chevron-right"></i></a>
-                    </div>                </div>
-            </div>
-            <div class="modal-outer display-none" id="pomodoro-timer-modal">
-                <div class="modal-inner">
-                    <div class="modal-top">
-                        <h2>React Pomodoro Timer</h2>
-                        <a onclick="hideModal('pomodoro-timer-modal')" class="btn no-border btn-large cursor-point"><i class="fa-solid fa-xmark"></i></a>
-                    </div>
-                    <img src="images/pomodoro-timer-thumbnail.jpg">
-                    <p>
-                        The main objective of this project was to learn how to use React hooks such as useEffect and useState. As this application has many shared pieces of state that must be updated
-                        and maintained over a period of time using a timer. The application allows the user to select two time lengths - a session of productivity and a break period. These
-                        two periods then alternate when the user presses the play button. Once a timer reaches zero a short audio clip plays to announce that the timer is finished before it
-                        switches to either a break or another session.
-                    </p>
-                    <div style="margin: 15px auto">
-                        <a href="https://pomodorotimerbyjacob.netlify.app/" class="btn no-border btn-center" target="_blank"> Visit the website  <i class="fas fa-chevron-right"></i></a>
-                        <a href="https://github.com/jacrowland/pomodoro-timer" class="btn no-border btn-center" target="_blank"> Visit the Github repository  <i class="fas fa-chevron-right"></i></a>
-                    </div>                </div>
-            </div>
-            <div class="modal-outer display-none" id="50kflatmate-modal">
-                <div class="modal-inner">
-                    <div class="modal-top">
-                        <h2>@50kflatmate Updates Twitter Bot</h2>
-                        <a onclick="hideModal('50kflatmate-modal')" class="btn no-border btn-large cursor-point"><i class="fa-solid fa-xmark"></i></a>
-                    </div>
-                    <img src="images/50kflatmate.jpg">
-                    <p>
-                        In June 2020 the New Zealand radio station The Edge ran a competition where ten twenty-somethings were placed into a flat.
-                        Their experience over the following 2 weeks was then live-streamed 24/7 on <a href="https://theedge.co.nz" class="nav-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> theedge.co.nz</a>. Throughout the two weeks flatmates 
-                        competed in challenges to earn money in between periods of elimination.
-
-                        The bot uses PuppeteerJS to open a headless instance of Google Chrome. It then navigates to the stream page and scrapes the relevant headers. It then clicks and snapshots each of the six cameras. 
-                        Once complete, the bot then interacts with the Twitter API V2 by uploading four of the six cameras and posting a tweet with the time, the current stream title, and the media ids. The whole process is automated via an hourly Cronjob.
-
-                    </p>
-                    <div style="margin: 15px auto">
-                        <a href="https://twitter.com/50kflatmate" class="btn no-border btn-center" target="_blank"> Go to @50kflatmate  <i class="fas fa-chevron-right"></i></a>
-                        <a href="https://github.com/jacrowland/50kflatmate-update-bot" class="btn no-border btn-center" target="_blank"> Visit the Github repository  <i class="fas fa-chevron-right"></i></a>
-                    </div>                </div>
-            </div>
-            <div class="modal-outer display-none" id="react-redux-calculator-modal">
-                <div class="modal-inner">
-                    <div class="modal-top">
-                        <h2>React Redux Calculator</h2>
-                        <a onclick="hideModal('react-redux-calculator-modal')" class="btn no-border btn-large cursor-point"><i class="fa-solid fa-xmark"></i></a>
-                    </div>
-                    <img src="images/react-redux-calculator.jpg">
-                    <p>
-                        This simple calculator app was built using HTML, CSS, JS, React and Redux - the state management framework. 
-                        After becoming more familiar with React this project allowed me to leverage what I had learnt about using state, props, 
-                        and hooks to build a more complex app with clearly defined actions (add, subtrack, clear etc.) These actions are handled by
-                         Reducer functions that allow for the the entire application's state to be stored in an app level store - this provides a 
-                         single source of truth and removes the need for repeated prop drilling (the passing of parameters between components - 
-                         even if they go unused by that component).
-                    </p>
-                    <div style="margin: 15px auto">
-                        <a href="https://reactreduxjscalculator.netlify.app/" class="btn no-border btn-center" target="_blank"> Visit the website  <i class="fas fa-chevron-right"></i></a>
-                        <a href="https://github.com/jacrowland/react-redux-calculator" class="btn no-border btn-center" target="_blank"> Visit the Github repository  <i class="fas fa-chevron-right"></i></a>
-                    </div>                </div>
-            </div>
-            <div class="modal-outer display-none" id="qr-code-project-modal">
-                <div class="modal-inner">
-                    <div class="modal-top">
-                        <h2>Python QR Code Detector</h2>
-                        <a onclick="hideModal('qr-code-project-modal')" class="btn no-border btn-large cursor-point"><i class="fa-solid fa-xmark"></i></a>
-                    </div>
-                    <img src="images/qr-code-detector.jpg">
-                    <p>This assignment for COMPSCI 373 Computer Graphics and Image Processing at The University of Auckland involved developing a QR Code Detector from scratch in Python using only NumPy to import the image.
-                        In the process I gained an understanding of image processing techniques such as morphological operations, segmentation
-                        and connected component analysis. Several extensions where also incorporated
-                        including the implementation of an adaptive thresholding algorithm, as well as, ensuring the detector worked correctly on 
-                        rotated images.
-    
-                        My solution and its associated report was selected as one of the top three out of a class of more than 200.
+                        <img src="images/wolf3de1m1.png">
+                        <p>
+                            Using the Unity Game Engine I remade the first level (with some tweaks) from the iconic 1992
+                            title Wolfenstein3D. This project was taken to weave together multiple aspects
+                            of the game development process that I had been learning including basic 3D modelling,
+                            animation, AI, C# scripting and more.
+                            The level features two enemies including a guard and dog. Both use a finite state machine to
+                            intelligently switch between states to guide behaviour.
+                            For example, an idle guard will switch to the chase state when a player wonders into their field
+                            of view. Other features include full rotational movement, multiple pickup types
+                            , as well as, four distinct weapons (from the original game). These include the knife and pistol
+                            (on the player by default), as well as,
+                            the machine gun and barrel gun which are hidden in secret areas.
                         </p>
-                    <!--<a href="https://github.com/jacrowland/" class="btn no-border btn-center" target="_blank"> Visit my Github  <i class="fas fa-chevron-right"></i></a>-->
-                    <p style="font-size: smaller; opacity: 0.5;">Note: University requirements require this repository be kept private. Please get in touch if you would like to view the source code or further materials.</p>
-                </div>
-            </div>
-            <div class="modal-outer display-none" id="visairo-ready-project-modal">
-                <div class="modal-inner">
-                    <div class="modal-top">
-                        <h2>Visairo Ready</h2>
-                        <a onclick="hideModal('visairo-ready-project-modal')" class="btn no-border btn-large cursor-point"><i class="fa-solid fa-xmark"></i></a>
-                    </div>
-                    <video width="550" controls>
-                        <source src="videos\VisairoReadyShowcase.m4v" type="video/mp4">
-                    </video>
-                    <p>
-                        As a Marketing Intern at Fisher & Paykel Healthcare™ I developed Visairo™ Ready, a two-part online course, aimed at getting hospital staff ready for the
-                        introduction of the mask in their respiratory unit. The course was created using existing and new materials.
-                        Tasks involved in the creation of the courses included wireframing page concepts, writing scripts and storyboarding video content, and prototyping and developing interactive game-like experiences.
-                        Tools used to create the modules included Adobe XD, Davinci Resolve, Blender and Articulate 360.
-                    </p>
-                    <a href="https://www.fphcare.com/nz/hospital/adult-respiratory/noninvasive-ventilation/visairo/" class="btn no-border btn-center" target="_blank"> Get Visairo Ready  <i class="fas fa-chevron-right"></i></a>
-                    <p style="font-size: smaller; opacity: 0.5;">Note: The website requires signing up to a F&P Education Hub account</p>
-                </div>
-            </div>
-            <div class="modal-outer display-none" id="red-queen-project-modal">
-                <div class="modal-inner">
-                    <div class="modal-top">
-                        <h2>Red Queen Discord.js Bot</h2>
-                        <a onclick="hideModal('red-queen-project-modal')" class="btn no-border btn-large cursor-point"><i class="fa-solid fa-xmark"></i></a>
-                    </div>
-                    <img style="height: 250px ;object-fit: cover;" src="https://raw.githubusercontent.com/jacrowland/red-queen/master/docs/images/music.JPG">
-                    <p>
-                        Red Queen was a Discord bot developed using a combination of node.js and discord.js. It offered many features including streaming youtube videos into voice channels, image search and retrieval, 8-ball and more.
-                        The name is a reference to the Red Queen Artificial Intelligence from the live-action Resident Evil films. A supercomputer that controls the secret underground Umbrella Corporation lab (and is a bit on the sinister side).
-                        As of January 2020 Red Queen is no longer updated or hosted. As changes to the Youtube Data API v3 prevent bots from streaming music.
-                        However, you can still visit the website to learn more about the features the bot offered.
-                    </p>
-                    <div style="margin: 15px auto">
-                        <a href="http://jacobrowland.me/red-queen/index.html" class="btn no-border btn-center" target="_blank"> Visit the website  <i class="fas fa-chevron-right"></i></a>
-                        <a href="https://github.com/jacrowland/red-queen" class="btn no-border btn-center" target="_blank"> Visit the Github repository  <i class="fas fa-chevron-right"></i></a>
+                        <div style="margin: 15px auto">
+                            <a href="https://jacobrowland.itch.io/e1m1" class="btn no-border btn-center" target="_blank">
+                                Play the game <i class="fas fa-chevron-right"></i></a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="modal-outer display-none" id="house-hunt-project-modal">
-                <div class="modal-inner">
-                    <div class="modal-top">
-                        <h2>House Hunt Web Application</h2>
-                        <a onclick="hideModal('house-hunt-project-modal')" class="btn no-border btn-large cursor-point"><i class="fa-solid fa-xmark"></i></a>
-                    </div>
-                    <img style="height:300px ;object-fit: cover;" src="images/house-hunt-web-app.jpg">
-                    <p>
-                        House Hunt is a web application built using HTML, CSS, Bootstrap and JS. It uses Google's Firebase and Firestore services to host a document based database of properties for users to upload and view.
-                        It features user authentication, submitting properties, viewing properties, and managing of the user's profile and submissions.
-                    </p>
-                    <div style="margin: 15px auto">
-                        <!--<a href="http://jacobrowland.me/house-hunt/index.html" class="btn no-border btn-center" target="_blank"> Visit the website  <i class="fas fa-chevron-right"></i></a>-->
-                        <a href="https://github.com/jacrowland/house-hunt" class="btn no-border btn-center" target="_blank"> Visit the Github repository  <i class="fas fa-chevron-right"></i></a>
+                <div class="modal-outer display-none" id="url-shortener-modal">
+                    <div class="modal-inner">
+                        <div class="modal-top">
+                            <h2>URL Shortener Microservice</h2>
+                            <a onclick="hideModal('url-shortener-modal')" class="btn no-border btn-large cursor-point"><i
+                                    class="fa-solid fa-xmark"></i></a>
+                        </div>
+                        <img src="images/url-shortener-thumbnail.jpg">
+                        <p>
+                            The URL Shortener Microservice was built in Javascript using the Express backend API framework,
+                            Mongoose, MongoDB Atlas (the hosted NOSQL document database) and Google's App Engine for
+                            deployment.
+                            The service allows a user to POST a URL to the API which returns JSON containing a shortened URL
+                            ID. This ID can then be appended to the URL shortener's URL to create a GET request that
+                            redirects the user to the original URL. This works by saving a document to the database which
+                            can then be used to look-up the returned ID.
+                            <br><br>e.g. [app url]/api/shorturl/931774092 will redirect to https://www.google.com<br>
+                        </p>
+                        <div style="margin: 15px auto">
+                            <a href="https://url-shortener-352411.ts.r.appspot.com/" class="btn no-border btn-center"
+                                target="_blank"> Visit the website <i class="fas fa-chevron-right"></i></a>
+                            <a href="https://github.com/jacrowland/url-shortener-microservice"
+                                class="btn no-border btn-center" target="_blank"> Visit the Github repository <i
+                                    class="fas fa-chevron-right"></i></a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="modal-outer display-none" id="visual-novel-project-modal">
-                <div class="modal-inner">
-                    <div class="modal-top">
-                        <h2>Python Visual Novel Game</h2>
-                        <a onclick="hideModal('visual-novel-project-modal')" class="btn no-border btn-large cursor-point"><i class="fa-solid fa-xmark"></i></a>
+                <div class="modal-outer display-none" id="pomodoro-timer-modal">
+                    <div class="modal-inner">
+                        <div class="modal-top">
+                            <h2>React Pomodoro Timer</h2>
+                            <a onclick="hideModal('pomodoro-timer-modal')" class="btn no-border btn-large cursor-point"><i
+                                    class="fa-solid fa-xmark"></i></a>
+                        </div>
+                        <img src="images/pomodoro-timer-thumbnail.jpg">
+                        <p>
+                            The main objective of this project was to learn how to use React hooks such as useEffect and
+                            useState. As this application has many shared pieces of state that must be updated
+                            and maintained over a period of time using a timer. The application allows the user to select
+                            two time lengths - a session of productivity and a break period. These
+                            two periods then alternate when the user presses the play button. Once a timer reaches zero a
+                            short audio clip plays to announce that the timer is finished before it
+                            switches to either a break or another session.
+                        </p>
+                        <div style="margin: 15px auto">
+                            <a href="https://pomodorotimerbyjacob.netlify.app/" class="btn no-border btn-center"
+                                target="_blank"> Visit the website <i class="fas fa-chevron-right"></i></a>
+                            <a href="https://github.com/jacrowland/pomodoro-timer" class="btn no-border btn-center"
+                                target="_blank"> Visit the Github repository <i class="fas fa-chevron-right"></i></a>
+                        </div>
                     </div>
-                    <video width="550" controls>
-                        <source src="videos\My Date With Math Chan Showcase.m4v" type="video/mp4">
-                    </video>
-                    <p>
-                        My Date With Math Chan is a short visual novel built using <a class="nav-link" href="https://www.renpy.org/"><i class="fa-solid fa-arrow-up-right-from-square"></i> RenPy</a> - a framework for building visual novels in Python. 
-                        This project showcases Python scripting, image manipulation and non-linear storytelling.
+                </div>
+                <div class="modal-outer display-none" id="50kflatmate-modal">
+                    <div class="modal-inner">
+                        <div class="modal-top">
+                            <h2>@50kflatmate Updates Twitter Bot</h2>
+                            <a onclick="hideModal('50kflatmate-modal')" class="btn no-border btn-large cursor-point"><i
+                                    class="fa-solid fa-xmark"></i></a>
+                        </div>
+                        <img src="images/50kflatmate.jpg">
+                        <p>
+                            In June 2020 the New Zealand radio station The Edge ran a competition where ten
+                            twenty-somethings were placed into a flat.
+                            Their experience over the following 2 weeks was then live-streamed 24/7 on <a
+                                href="https://theedge.co.nz" class="nav-link"><i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i> theedge.co.nz</a>. Throughout the
+                            two weeks flatmates
+                            competed in challenges to earn money in between periods of elimination.
 
-                        This game was created as a creative work for MATH 102 at The University of Auckland in 2019.
-                    </p>
-                    <div style="margin: 15px auto">
-                        <a href="https://github.com/jacrowland/mydatewithmathchan/releases/tag/release" class="btn no-border btn-center" target="_blank"> Download <i class="fas fa-download"></i></a>
-                        <a href="https://github.com/jacrowland/mydatewithmathchan" class="btn no-border btn-center" target="_blank"> Visit the Github repository  <i class="fas fa-chevron-right"></i></a>
+                            The bot uses PuppeteerJS to open a headless instance of Google Chrome. It then navigates to the
+                            stream page and scrapes the relevant headers. It then clicks and snapshots each of the six
+                            cameras.
+                            Once complete, the bot then interacts with the Twitter API V2 by uploading four of the six
+                            cameras and posting a tweet with the time, the current stream title, and the media ids. The
+                            whole process is automated via an hourly Cronjob.
+
+                        </p>
+                        <div style="margin: 15px auto">
+                            <a href="https://twitter.com/50kflatmate" class="btn no-border btn-center" target="_blank"> Go
+                                to @50kflatmate <i class="fas fa-chevron-right"></i></a>
+                            <a href="https://github.com/jacrowland/50kflatmate-update-bot" class="btn no-border btn-center"
+                                target="_blank"> Visit the Github repository <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-outer display-none" id="react-redux-calculator-modal">
+                    <div class="modal-inner">
+                        <div class="modal-top">
+                            <h2>React Redux Calculator</h2>
+                            <a onclick="hideModal('react-redux-calculator-modal')"
+                                class="btn no-border btn-large cursor-point"><i class="fa-solid fa-xmark"></i></a>
+                        </div>
+                        <img src="images/react-redux-calculator.jpg">
+                        <p>
+                            This simple calculator app was built using HTML, CSS, JS, React and Redux - the state management
+                            framework.
+                            After becoming more familiar with React this project allowed me to leverage what I had learnt
+                            about using state, props,
+                            and hooks to build a more complex app with clearly defined actions (add, subtrack, clear etc.)
+                            These actions are handled by
+                            Reducer functions that allow for the the entire application's state to be stored in an app level
+                            store - this provides a
+                            single source of truth and removes the need for repeated prop drilling (the passing of
+                            parameters between components -
+                            even if they go unused by that component).
+                        </p>
+                        <div style="margin: 15px auto">
+                            <a href="https://reactreduxjscalculator.netlify.app/" class="btn no-border btn-center"
+                                target="_blank"> Visit the website <i class="fas fa-chevron-right"></i></a>
+                            <a href="https://github.com/jacrowland/react-redux-calculator" class="btn no-border btn-center"
+                                target="_blank"> Visit the Github repository <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-outer display-none" id="qr-code-project-modal">
+                    <div class="modal-inner">
+                        <div class="modal-top">
+                            <h2>Python QR Code Detector</h2>
+                            <a onclick="hideModal('qr-code-project-modal')" class="btn no-border btn-large cursor-point"><i
+                                    class="fa-solid fa-xmark"></i></a>
+                        </div>
+                        <img src="images/qr-code-detector.jpg">
+                        <p>This assignment for COMPSCI 373 Computer Graphics and Image Processing at The University of
+                            Auckland involved developing a QR Code Detector from scratch in Python using only NumPy to
+                            import the image.
+                            In the process I gained an understanding of image processing techniques such as morphological
+                            operations, segmentation
+                            and connected component analysis. Several extensions where also incorporated
+                            including the implementation of an adaptive thresholding algorithm, as well as, ensuring the
+                            detector worked correctly on
+                            rotated images.
+
+                            My solution and its associated report was selected as one of the top three out of a class of
+                            more than 200.
+                        </p>
+                        <!--<a href="https://github.com/jacrowland/" class="btn no-border btn-center" target="_blank"> Visit my Github  <i class="fas fa-chevron-right"></i></a>-->
+                        <p style="font-size: smaller; opacity: 0.5;">Note: University requirements require this repository
+                            be kept private. Please get in touch if you would like to view the source code or further
+                            materials.</p>
+                    </div>
+                </div>
+                <div class="modal-outer display-none" id="visairo-ready-project-modal">
+                    <div class="modal-inner">
+                        <div class="modal-top">
+                            <h2>Visairo Ready</h2>
+                            <a onclick="hideModal('visairo-ready-project-modal')"
+                                class="btn no-border btn-large cursor-point"><i class="fa-solid fa-xmark"></i></a>
+                        </div>
+                        <video width="550" controls>
+                            <source src="videos\VisairoReadyShowcase.m4v" type="video/mp4">
+                        </video>
+                        <p>
+                            As a Marketing Intern at Fisher & Paykel Healthcare™ I developed Visairo™ Ready, a two-part
+                            online course, aimed at getting hospital staff ready for the
+                            introduction of the mask in their respiratory unit. The course was created using existing and
+                            new materials.
+                            Tasks involved in the creation of the courses included wireframing page concepts, writing
+                            scripts and storyboarding video content, and prototyping and developing interactive game-like
+                            experiences.
+                            Tools used to create the modules included Adobe XD, Davinci Resolve, Blender and Articulate 360.
+                        </p>
+                        <a href="https://www.fphcare.com/nz/hospital/adult-respiratory/noninvasive-ventilation/visairo/"
+                            class="btn no-border btn-center" target="_blank"> Get Visairo Ready <i
+                                class="fas fa-chevron-right"></i></a>
+                        <p style="font-size: smaller; opacity: 0.5;">Note: The website requires signing up to a F&P
+                            Education Hub account</p>
+                    </div>
+                </div>
+                <div class="modal-outer display-none" id="red-queen-project-modal">
+                    <div class="modal-inner">
+                        <div class="modal-top">
+                            <h2>Red Queen Discord.js Bot</h2>
+                            <a onclick="hideModal('red-queen-project-modal')"
+                                class="btn no-border btn-large cursor-point"><i class="fa-solid fa-xmark"></i></a>
+                        </div>
+                        <img style="height: 250px ;object-fit: cover;"
+                            src="https://raw.githubusercontent.com/jacrowland/red-queen/master/docs/images/music.JPG">
+                        <p>
+                            Red Queen was a Discord bot developed using a combination of node.js and discord.js. It offered
+                            many features including streaming youtube videos into voice channels, image search and
+                            retrieval, 8-ball and more.
+                            The name is a reference to the Red Queen Artificial Intelligence from the live-action Resident
+                            Evil films. A supercomputer that controls the secret underground Umbrella Corporation lab (and
+                            is a bit on the sinister side).
+                            As of January 2020 Red Queen is no longer updated or hosted. As changes to the Youtube Data API
+                            v3 prevent bots from streaming music.
+                            However, you can still visit the website to learn more about the features the bot offered.
+                        </p>
+                        <div style="margin: 15px auto">
+                            <a href="http://jacobrowland.me/red-queen/index.html" class="btn no-border btn-center"
+                                target="_blank"> Visit the website <i class="fas fa-chevron-right"></i></a>
+                            <a href="https://github.com/jacrowland/red-queen" class="btn no-border btn-center"
+                                target="_blank"> Visit the Github repository <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-outer display-none" id="house-hunt-project-modal">
+                    <div class="modal-inner">
+                        <div class="modal-top">
+                            <h2>House Hunt Web Application</h2>
+                            <a onclick="hideModal('house-hunt-project-modal')"
+                                class="btn no-border btn-large cursor-point"><i class="fa-solid fa-xmark"></i></a>
+                        </div>
+                        <img style="height:300px ;object-fit: cover;" src="images/house-hunt-web-app.jpg">
+                        <p>
+                            House Hunt is a web application built using HTML, CSS, Bootstrap and JS. It uses Google's
+                            Firebase and Firestore services to host a document based database of properties for users to
+                            upload and view.
+                            It features user authentication, submitting properties, viewing properties, and managing of the
+                            user's profile and submissions.
+                        </p>
+                        <div style="margin: 15px auto">
+                            <!--<a href="http://jacobrowland.me/house-hunt/index.html" class="btn no-border btn-center" target="_blank"> Visit the website  <i class="fas fa-chevron-right"></i></a>-->
+                            <a href="https://github.com/jacrowland/house-hunt" class="btn no-border btn-center"
+                                target="_blank"> Visit the Github repository <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-outer display-none" id="visual-novel-project-modal">
+                    <div class="modal-inner">
+                        <div class="modal-top">
+                            <h2>Python Visual Novel Game</h2>
+                            <a onclick="hideModal('visual-novel-project-modal')"
+                                class="btn no-border btn-large cursor-point"><i class="fa-solid fa-xmark"></i></a>
+                        </div>
+                        <video width="550" controls>
+                            <source src="videos\My Date With Math Chan Showcase.m4v" type="video/mp4">
+                        </video>
+                        <p>
+                            My Date With Math Chan is a short visual novel built using <a class="nav-link"
+                                href="https://www.renpy.org/"><i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                RenPy</a> - a framework for building visual novels in Python.
+                            This project showcases Python scripting, image manipulation and non-linear storytelling.
+
+                            This game was created as a creative work for MATH 102 at The University of Auckland in 2019.
+                        </p>
+                        <div style="margin: 15px auto">
+                            <a href="https://github.com/jacrowland/mydatewithmathchan/releases/tag/release"
+                                class="btn no-border btn-center" target="_blank"> Download <i
+                                    class="fas fa-download"></i></a>
+                            <a href="https://github.com/jacrowland/mydatewithmathchan" class="btn no-border btn-center"
+                                target="_blank"> Visit the Github repository <i class="fas fa-chevron-right"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>  
-    </main>
-    <a id="scroll-to-top-btn" styles="display: none" href="#welcome-section" class="btn"><i class="fa-solid fa-angle-up"></i></a>
-</body>
-<footer>
-    <p><i class="fa-solid fa-copyright"></i> Copyright 2022</p>
-    <a style="font-size: smaller" href="https://github.com/jacrowland/jacrowland.github.io" class="nav-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> View this project on Github</a>
-</footer>
-<script>
-const displayModal = (id) => {document.getElementById(id).classList.remove('display-none');};
-const hideModal = (id) => {
-    document.getElementById(id).classList.add('display-none');
-    document.querySelectorAll('video').forEach(video => video.id != "hero-bg-video" ? video.pause() : null);
-}
+        </main>
+    </body>
+    <footer>
+        <p><i class="fa-solid fa-copyright" style="padding-right: 5px"></i>Copyright <span id="current-year">X</span></p>
+        <a style="font-size: smaller" href="https://github.com/jacrowland/jacrowland.github.io" class="nav-link"><i
+                class="fa-solid fa-arrow-up-right-from-square"></i> View this project on Github</a>
+    </footer>
+    <script>
+        const displayModal = (id) => { document.getElementById(id).classList.remove('display-none'); };
+        const hideModal = (id) => {
+            document.getElementById(id).classList.add('display-none');
+            document.querySelectorAll('video').forEach(video => video.id != "hero-bg-video" ? video.pause() : null);
+        }
 
-var prevScrollYAmount = 0;
-document.addEventListener("scroll", (e) => {
-    document.getElementById("navbar").style.top =  window.pageYOffset > prevScrollYAmount && window.pageYOffset > window.innerHeight ? "-100px" : "0";
-    document.getElementById("navbar").style.opacity =  window.pageYOffset > prevScrollYAmount && window.pageYOffset > window.innerHeight ? "0" : "1";
-    document.getElementById("scroll-to-top-btn").style.display = window.pageYOffset > (window.innerHeight / 100 * 10) ? "unset" : "none";
-    prevScrollYAmount = window.pageYOffset;
-});
+        var prevScrollYAmount = 0;
+        document.addEventListener("scroll", (e) => {
+            document.getElementById("navbar").style.top = window.pageYOffset > prevScrollYAmount && window.pageYOffset > window.innerHeight ? "-100px" : "0";
+            document.getElementById("navbar").style.opacity = window.pageYOffset > prevScrollYAmount && window.pageYOffset > window.innerHeight ? "0" : "1";
+            prevScrollYAmount = window.pageYOffset;
+        });
 
-var displayHiddenProjects = () => {
-    document.querySelector('#projects').querySelectorAll('.display-none').forEach(project => {
-        project.classList.remove("display-none");
-    });
-    document.getElementById('view-more-projects-btn').style.display = 'none';
-}
-</script>
+        var displayHiddenProjects = () => {
+            document.querySelector('#projects').querySelectorAll('.display-none').forEach(project => {
+                project.classList.remove("display-none");
+            });
+            document.getElementById('view-more-projects-btn').style.display = 'none';
+        }
+
+        document.getElementById('current-year').innerHTML = new Date().getFullYear();
+    </script>
 </html>
