@@ -40,7 +40,6 @@ body {
     background-color: unset;
 }
 
-
 .btn-md {
     font-size: 1.12rem;
 }
@@ -63,8 +62,6 @@ body {
 .nav-link:hover {
     color: var(--secondary-color);
 }
-
-/* header */
 
 header {
     font-size: 1.25rem;
