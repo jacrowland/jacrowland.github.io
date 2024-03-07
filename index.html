@@ -32,22 +32,20 @@
         <main>
             <section id="projects">
                 <div class="project-tiles">
-                    <project-tile title="Python QR Code Detector" image-src="public/images/qr-code-detector-thumbnail.jpg" id="qr-code-project"></project-tile>
-                    <project-tile title="F&P Healthcare™ Visairo™ Ready" image-src="https://resources.fphcare.com/content/rt076-and-caregiver.jpg" id="visairo-ready-project"></project-tile>
-                    <project-tile title="Unity Wolf3D E1M1 Remake" image-src="public/images/wolf3de1m1.png" id="wolf3d-project"></project-tile>
-                    <project-tile title="Multinominal Naive Bayes Classifier" image-src="https://www.sciencenews.org/wp-content/uploads/2016/05/052816_bayesian-opener_free.jpg" id="naive-bayes-project"></project-tile>
-                    <project-tile title="50kflatmate Updates Twitter Bot" image-src="public/images/50kflatmate-thumbnail.jpg" id="50kflatmate-project"></project-tile>
-                    <project-tile title="Python Visual Novel Game" image-src="public/images/visual-novel-thumbnail.jpg" id="visual-novel-project"></project-tile>
-                    <project-tile title="House Hunt Web App" image-src="public/images/house-hunt-thumbnail.jpg" id="house-hunt-project"></project-tile>
-                    <project-tile title="URL Shortener Microservice" image-src="public/images/url-shortener-thumbnail.jpg" id="url-shortener-project"></project-tile>
-                    <project-tile title="React Pomodoro Timer" image-src="public/images/pomodoro-timer-thumbnail.jpg" id="pomodoro-timer-project"></project-tile>
-                    <project-tile title="React Redux Calculator" image-src="public/images/react-redux-calculator-thumbnail.jpg" id="react-redux-calculator-project"></project-tile>
+                    <project-tile title="Python QR Code Detector" image-src="public/images/qr-code-detector-thumbnail.jpg" id="qr-code"></project-tile>
+                    <project-tile title="F&P Healthcare™ Visairo™ Ready" image-src="https://resources.fphcare.com/content/rt076-and-caregiver.jpg" id="visairo-ready"></project-tile>
+                    <project-tile title="Unity Wolf3D E1M1 Remake" image-src="public/images/wolf3de1m1.png" id="wolf3d"></project-tile>
+                    <!-- <project-tile title="Multinominal Naive Bayes Classifier" url="" image-src="https://www.sciencenews.org/wp-content/uploads/2016/05/052816_bayesian-opener_free.jpg" id="naive-bayes-project"></project-tile> -->
+                    <project-tile title="50kflatmate Updates Twitter Bot" image-src="public/images/50kflatmate-thumbnail.jpg" id="50kflatmate"></project-tile>
+                    <project-tile title="Python Visual Novel Game" image-src="public/images/visual-novel-thumbnail.jpg" id="visual-novel"></project-tile>
+                    <project-tile title="House Hunt Web App" image-src="public/images/house-hunt-thumbnail.jpg" id="house-hunt"></project-tile>
+                    <project-tile title="URL Shortener Microservice" image-src="public/images/url-shortener-thumbnail.jpg" id="url-shortener"></project-tile>
+                    <project-tile title="React Pomodoro Timer" image-src="public/images/pomodoro-timer-thumbnail.jpg" id="pomodoro-timer"></project-tile>
+                    <project-tile title="React Redux Calculator" image-src="public/images/react-redux-calculator-thumbnail.jpg" id="react-redux-calculator"></project-tile>
                 </div>
                 <div style="padding-top: 50px">
-                    <a href="https://github.com/jacrowland/" class="btn display-none cursor-point" target="_blank" style="margin-top: 15px">View more on Github<i
+                    <a href="https://github.com/jacrowland/" class="btn cursor-point" target="_blank" style="margin-top: 15px">View more on Github<i
                             class="fas fa-chevron-right"></i></a><br>
-                    <button onclick="displayHiddenProjects()" class="btn btn-md cursor-point" id="view-more-projects-btn">View more <i
-                            class="fas fa-chevron-right"></i></button>
                 </div>
             </section>
             <div id="modals">
@@ -190,11 +188,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="modal-outer display-none" id="qr-code-project-modal">
+                <div class="modal-outer display-none" id="qr-code-modal">
                     <div class="modal-inner">
                         <div class="modal-top">
                             <h2>Python QR Code Detector</h2>
-                            <a onclick="hideModal('qr-code-project-modal')" class="btn no-border btn-large cursor-point"><i
+                            <a onclick="hideModal('qr-code-modal')" class="btn no-border btn-large cursor-point"><i
                                     class="fa-solid fa-xmark"></i></a>
                         </div>
                         <img src="public/images/qr-code-detector.jpg" alt="'qr code detector figure">
@@ -217,11 +215,11 @@
                             materials.</p>
                     </div>
                 </div>
-                <div class="modal-outer display-none" id="visairo-ready-project-modal">
+                <div class="modal-outer display-none" id="visairo-ready-modal">
                     <div class="modal-inner">
                         <div class="modal-top">
                             <h2>Visairo Ready</h2>
-                            <a onclick="hideModal('visairo-ready-project-modal')"
+                            <a onclick="hideModal('visairo-ready-modal')"
                                 class="btn no-border btn-large cursor-point"><i class="fa-solid fa-xmark"></i></a>
                         </div>
                         <video width="550" controls>
@@ -244,11 +242,11 @@
                             Education Hub account</p>
                     </div>
                 </div>
-                <div class="modal-outer display-none" id="house-hunt-project-modal">
+                <div class="modal-outer display-none" id="house-hunt-modal">
                     <div class="modal-inner">
                         <div class="modal-top">
                             <h2>House Hunt Web Application</h2>
-                            <a onclick="hideModal('house-hunt-project-modal')"
+                            <a onclick="hideModal('house-hunt-modal')"
                                 class="btn no-border btn-large cursor-point"><i class="fa-solid fa-xmark"></i></a>
                         </div>
                         <img style="height:300px ;object-fit: cover;" src="public/images/house-hunt-web-app.jpg" alt="'house hunt web app screenshot">
@@ -266,11 +264,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="modal-outer display-none" id="visual-novel-project-modal">
+                <div class="modal-outer display-none" id="visual-novel-modal">
                     <div class="modal-inner">
                         <div class="modal-top">
                             <h2>Python Visual Novel Game</h2>
-                            <a onclick="hideModal('visual-novel-project-modal')"
+                            <a onclick="hideModal('visual-novel-modal')"
                                 class="btn no-border btn-large cursor-point"><i class="fa-solid fa-xmark"></i></a>
                         </div>
                         <video width="550" controls>

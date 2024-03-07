@@ -12,11 +12,4 @@ document.addEventListener("scroll", (e) => {
     prevScrollYAmount = window.pageYOffset;
 });
 
-var displayHiddenProjects = () => {
-    document.querySelector('#projects').querySelectorAll('.display-none').forEach(project => {
-        project.classList.remove("display-none");
-    });
-    document.getElementById('view-more-projects-btn').style.display = 'none';
-}
-
 document.getElementById('current-year').innerHTML = new Date().getFullYear();
