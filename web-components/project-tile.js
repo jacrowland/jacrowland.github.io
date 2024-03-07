@@ -58,9 +58,11 @@ export class ProjectTile extends HTMLElement {
 
     document.head.insertAdjacentHTML("beforeend", `<style>${styles}</style>`);
 
+    const modalId = `'${this.getAttribute("id")}-modal'`
+    
     this.innerHTML = `
       <div class="project-tile">
-        <a target="_blank" onclick="displayModal('qr-code-project-modal')" class="cursor-point">
+        <a target="_blank" onclick="displayModal(${modalId})" class="cursor-point">
             <div class="project-image">
                 <img src="${this.imageSource}">
             </div>
