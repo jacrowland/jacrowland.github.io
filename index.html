@@ -3,6 +3,7 @@
     <head>
         <title>Jacob Rowland</title>
         <link rel="stylesheet" type="text/css" href="styles.css">
+        <script type="module" src="web-components\index.js"></script>
         <script src="main.js" defer></script>
         <meta name="description" content="Jacob Rowland's projects">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -31,87 +32,16 @@
         <main>
             <section id="projects">
                 <div class="project-tiles">
-                <div class="project-tile" id="qr-code-project">
-                    <a target="_blank" onclick="displayModal('qr-code-project-modal')" class="cursor-point">
-                        <div class="project-image">
-                            <img src="public/images/qr-code-detector-thumbnail.jpg" alt="'qr code detector output image">
-                        </div>
-                        <h3 class="project-title">Python QR Code Detector</h3>
-                    </a>
-                </div>
-                <div target="_blank" class="project-tile" id="visairo-ready-project">
-                    <a onclick="displayModal('visairo-ready-project-modal')" class="cursor-point">
-                        <div class="project-image">
-                            <img src="https://resources.fphcare.com/content/rt076-and-caregiver.jpg" alt="'fph mask content">
-                        </div>
-                        <h3 class="project-title">F&P Healthcare™ Visairo™ Ready</h3>
-                    </a>
-                </div>
-                <div class="project-tile" id="wolf3d-project">
-                    <a target="_blank" onclick="displayModal('wolf3d-modal')" class="cursor-point">
-                        <div class="project-image">
-                            <img src="public/images/wolf3de1m1.png" alt="unity wolf3d graphic">
-                        </div>
-                        <h3 class="project-title">Unity Wolf3D E1M1 Remake</h3>
-                    </a>
-                </div>
-                <div class="project-tile" id="naive-bayes-project">
-                    <a target="_blank" href="https://github.com/jacrowland/naive-bayes">
-                        <div class="project-image">
-                            <img
-                                src="https://www.sciencenews.org/wp-content/uploads/2016/05/052816_bayesian-opener_free.jpg" alt="bayes classifier graphic">
-                        </div>
-                        <h3 class="project-title">Multinominal Naive Bayes Classifier</h3>
-                    </a>
-                </div>
-                <div class="project-tile display-none" id="50kflatmate-project">
-                    <a target="_blank" onclick="displayModal('50kflatmate-modal')" class="cursor-point">
-                        <div class="project-image">
-                            <img src="public/images/50kflatmate-thumbnail.jpg" alt='50k flatemate twitter screenshot'>
-                        </div>
-                        <h3 class="project-title">50kflatmate Updates Twitter Bot</h3>
-                    </a>
-                </div>
-                <div class="project-tile display-none" id="visual-novel-project">
-                    <a onclick="displayModal('visual-novel-project-modal')">
-                        <div class="project-image">
-                            <img src="public/images/visual-novel-thumbnail.jpg" alt="'visual novel game screenshot">
-                        </div>
-                        <h3 class="project-title">Python Visual Novel Game</h3>
-                    </a>
-                </div>
-                <div class="project-tile display-none" id="house-hunt-project">
-                        <a onclick="displayModal('house-hunt-project-modal')"">
-                            <div class=" project-image">
-                            <img src="public/images/house-hunt-thumbnail.jpg" alt="'house hunt app screenshot">
-                    </div>
-                    <h3 class="project-title">House Hunt Web App</h3>
-                    </a>
-                </div>
-                <div class="project-tile display-none" id="url-shortener-project">
-                    <a target="_blank" onclick="displayModal('url-shortener-modal')" class="cursor-point">
-                        <div class="project-image">
-                            <img src="public/images/url-shortener-thumbnail.jpg" alt="'url shortener screenshot">
-                        </div>
-                        <h3 class="project-title">URL Shortener Microservice</h3>
-                    </a>
-                </div>
-                <div class="project-tile display-none" id="pomodoro-timer-project">
-                    <a target="_blank" onclick="displayModal('pomodoro-timer-modal')" class="cursor-point">
-                        <div class="project-image">
-                            <img src="public/images/pomodoro-timer-thumbnail.jpg" alt="'pomodoro timer screenshot">
-                        </div>
-                        <h3 class="project-title">React Pomodoro Timer</h3>
-                    </a>
-                </div>
-                <div class="project-tile display-none" id="react-redux-calculator-project">
-                    <a target="_blank" onclick="displayModal('react-redux-calculator-modal')" class="cursor-point">
-                        <div class="project-image">
-                            <img src="public/images/react-redux-calculator-thumbnail.jpg" alt="'react redux calculator">
-                        </div>
-                        <h3 class="project-title">React Redux Calculator</h3>
-                    </a>
-                </div>
+                    <project-tile title="Python QR Code Detector" image-src="public/images/qr-code-detector-thumbnail.jpg" id="qr-code-project"></project-tile>
+                    <project-tile title="F&P Healthcare™ Visairo™ Ready" image-src="https://resources.fphcare.com/content/rt076-and-caregiver.jpg" id="visairo-ready-project"></project-tile>
+                    <project-tile title="Unity Wolf3D E1M1 Remake" image-src="public/images/wolf3de1m1.png" id="wolf3d-project"></project-tile>
+                    <project-tile title="Multinominal Naive Bayes Classifier" image-src="https://www.sciencenews.org/wp-content/uploads/2016/05/052816_bayesian-opener_free.jpg" id="naive-bayes-project"></project-tile>
+                    <project-tile title="50kflatmate Updates Twitter Bot" image-src="public/images/50kflatmate-thumbnail.jpg" id="50kflatmate-project"></project-tile>
+                    <project-tile title="Python Visual Novel Game" image-src="public/images/visual-novel-thumbnail.jpg" id="visual-novel-project"></project-tile>
+                    <project-tile title="House Hunt Web App" image-src="public/images/house-hunt-thumbnail.jpg" id="house-hunt-project"></project-tile>
+                    <project-tile title="URL Shortener Microservice" image-src="public/images/url-shortener-thumbnail.jpg" id="url-shortener-project"></project-tile>
+                    <project-tile title="React Pomodoro Timer" image-src="public/images/pomodoro-timer-thumbnail.jpg" id="pomodoro-timer-project"></project-tile>
+                    <project-tile title="React Redux Calculator" image-src="public/images/react-redux-calculator-thumbnail.jpg" id="react-redux-calculator-project"></project-tile>
                 </div>
                 <div style="padding-top: 50px">
                     <a href="https://github.com/jacrowland/" class="btn display-none cursor-point" target="_blank" style="margin-top: 15px">View more on Github<i
