@@ -1,4 +1,3 @@
-
 const displayModal = (id) => { document.getElementById(id).classList.remove('display-none'); };
 
 const hideModal = (id) => {
