@@ -3,6 +3,7 @@
     <head>
         <title>Jacob Rowland</title>
         <link rel="stylesheet" type="text/css" href="styles.css">
+        <script src="main.js" defer></script>
         <meta name="description" content="Jacob Rowland's projects">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta charset="UTF-8" />
@@ -367,30 +368,9 @@
     </body>
     <footer>
         <p><i class="fa-solid fa-copyright" style="padding-right: 5px"></i>Copyright <span id="current-year">X</span></p>
-        <a style="font-size: smaller" href="https://github.com/jacrowland/jacrowland.github.io" class="nav-link"><i
-                class="fa-solid fa-arrow-up-right-from-square"></i> View this project on Github</a>
+        <a style="font-size: smaller" href="https://github.com/jacrowland/jacrowland.github.io" class="nav-link">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> 
+                View this project on Github
+        </a>
     </footer>
-    <script>
-        const displayModal = (id) => { document.getElementById(id).classList.remove('display-none'); };
-        const hideModal = (id) => {
-            document.getElementById(id).classList.add('display-none');
-            document.querySelectorAll('video').forEach(video => video.id != "hero-bg-video" ? video.pause() : null);
-        }
-
-        var prevScrollYAmount = 0;
-        document.addEventListener("scroll", (e) => {
-            document.getElementById("navbar").style.top = window.pageYOffset > prevScrollYAmount && window.pageYOffset > window.innerHeight ? "-100px" : "0";
-            document.getElementById("navbar").style.opacity = window.pageYOffset > prevScrollYAmount && window.pageYOffset > window.innerHeight ? "0" : "1";
-            prevScrollYAmount = window.pageYOffset;
-        });
-
-        var displayHiddenProjects = () => {
-            document.querySelector('#projects').querySelectorAll('.display-none').forEach(project => {
-                project.classList.remove("display-none");
-            });
-            document.getElementById('view-more-projects-btn').style.display = 'none';
-        }
-
-        document.getElementById('current-year').innerHTML = new Date().getFullYear();
-    </script>
 </html>
