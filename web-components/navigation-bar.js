@@ -74,11 +74,6 @@ export class NavigationBar extends HTMLElement {
                   </a>
                 </li>
                 <li>
-                  <a class="nav-link" target="_blank" href="mailto:jacob.rowland@hotmail.com">
-                    <i class="fa-solid fa-envelope"></i>
-                  </a>
-                </li>
-                <li>
                   <a class="nav-link" target="_blank" href="https://www.linkedin.com/in/jacob-rowland-197821193/">
                     <i class="fa-brands fa-linkedin"></i>
                   </a>
