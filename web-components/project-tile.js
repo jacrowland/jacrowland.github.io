@@ -14,6 +14,7 @@ export class ProjectTile extends HTMLElement {
         --project-tile-width: 600px;
         height: var(--project-tile-height);
         width: var(--project-tile-width);
+        max-width: 85vw;
         transition: 0.2s ease-in-out;
         background-color: var(--background-secondary-color);
       }
