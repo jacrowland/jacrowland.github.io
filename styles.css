@@ -20,9 +20,17 @@ html {
     font-family: 'Open Sans', sans-serif;
 }
 
+.backdrop {
+    background-color: #161616;
+    background-image:  linear-gradient(#333333 0.8px, transparent 0.8px), linear-gradient(90deg, #333333 0.8px, transparent 0.8px), linear-gradient(#333333 0.4px, transparent 0.4px), linear-gradient(90deg, #333333 0.4px, #161616 0.4px);
+    background-size: 20px 20px, 20px 20px, 4px 4px, 4px 4px;
+    background-position: -0.8px -0.8px, -0.8px -0.8px, -0.4px -0.4px, -0.4px -0.4px;
+}
+
 body {
     margin: 0;
     padding: 0;
+    opacity: 1;
 }
 
 .bold {
@@ -72,11 +80,6 @@ header {
 }
 
 section {
-    background-color: #161616;
-    opacity: 1;
-    background-image:  linear-gradient(#333333 0.8px, transparent 0.8px), linear-gradient(90deg, #333333 0.8px, transparent 0.8px), linear-gradient(#333333 0.4px, transparent 0.4px), linear-gradient(90deg, #333333 0.4px, #161616 0.4px);
-    background-size: 20px 20px, 20px 20px, 4px 4px, 4px 4px;
-    background-position: -0.8px -0.8px, -0.8px -0.8px, -0.4px -0.4px, -0.4px -0.4px;
     color: var(--primary-color);
 }
 
