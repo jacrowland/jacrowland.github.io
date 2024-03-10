@@ -1,5 +1,5 @@
 export class ProjectTile extends HTMLElement {
-  static observedAttributes = ["title", "image-src"];
+  static observedAttributes = ["title", "image-src", "url"];
   title = "";
   imageSource = "";
 
@@ -8,6 +8,13 @@ export class ProjectTile extends HTMLElement {
   }
 
   connectedCallback() {
+    const url = this.getAttribute("url");
+    if (url) {
+      this.addEventListener("click", () => {
+        window.open(url, "_blank");
+      });
+    }
+
     const styles = `
       .project-tile {
         --project-tile-height: 400px;
@@ -56,7 +63,6 @@ export class ProjectTile extends HTMLElement {
           filter: grayscale(75%);
       }
     `;
-
     document.head.insertAdjacentHTML("beforeend", `<style>${styles}</style>`);
 
     const modalId = `'${this.getAttribute("id")}-modal'`
@@ -79,6 +85,9 @@ export class ProjectTile extends HTMLElement {
         break;
       case "image-src":
         this.imageSource = newValue;
+        break;
+      case "url":
+        this.url = newValue;
         break;
     }
   }
