@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Jacob Rowland</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script type="module" src="main.js" defer></script>
+        <meta name="description" content="Jacob Rowland's projects">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+            integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../public//favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../public//favicon/favicon-16x16.png">
+    </head>
+    <body class="backdrop">
+        <header id="header">
+            <navigation-bar></navigation-bar>
+        </header>
+        <main>
+            <section id="projects">
+                <div class="project-tiles">
+                    <project-tile title="Python QR Code Detector" image-src="../public/images/qr-code-detector-thumbnail.jpg" id="qr-code"></project-tile>
+                    <project-tile title="Multi-Agent Parking Simulator" image-src="../public/images/parking-lot-simulator-thumbnail.jpg" id="parking-lot-simulator"></project-tile>
+                    <project-tile title="NUBU Pharamceuticals Competition Kiosk" image-src="../public/images/nubu-app-thumbnail.jpg" id="nubu-app"></project-tile>
+                    <project-tile title="CIAANZ Website" image-src="../public/images/ciaanz-website-thumbnail.jpg" id="ciaanz-website"></project-tile>
+                    <project-tile title="F&P Healthcare™ Visairo™ Ready" image-src="https://resources.fphcare.com/content/rt076-and-caregiver.jpg" id="visairo-ready"></project-tile>
+                    <project-tile title="Unity Wolf3D E1M1 Remake" image-src="../public/images/wolf3de1m1.png" id="wolf3d"></project-tile>
+                    <project-tile title="Multinominal Naive Bayes Classifier" url="https://github.com/jacrowland/naive-bayes" image-src="https://www.sciencenews.org/wp-content/uploads/2016/05/052816_bayesian-opener_free.jpg" id="naive-bayes-project"></project-tile>
+                    <project-tile title="50kflatmate Updates Twitter Bot" image-src="../public/images/50kflatmate-thumbnail.jpg" id="50kflatmate"></project-tile>
+                    <project-tile title="Python Visual Novel Game" image-src="../public/images/visual-novel-thumbnail.jpg" id="visual-novel"></project-tile>
+                    <project-tile title="House Hunt Web App" image-src="../public/images/house-hunt-thumbnail.jpg" id="house-hunt"></project-tile>
+                    <project-tile title="URL Shortener Microservice" image-src="../public/images/url-shortener-thumbnail.jpg" id="url-shortener"></project-tile>
+                    <project-tile title="React Pomodoro Timer" image-src="../public/images/pomodoro-timer-thumbnail.jpg" id="pomodoro-timer"></project-tile>
+                    <project-tile title="React Redux Calculator" image-src="../public/images/react-redux-calculator-thumbnail.jpg" id="react-redux-calculator"></project-tile>
+                </div>
+                <div style="padding-top: 50px">
+                    <a href="https://github.com/jacrowland/" class="btn cursor-point" target="_blank" style="margin-top: 15px">
+                        View more on Github <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+            </section>
+            <div id="modals">
+                <div class="modal-outer display-none" id="parking-lot-simulator-modal">
+                    <div class="modal-inner">
+                        <div class="modal-top">
+                            <h2>Multi-Agent Parking Simulator</h2>
+                            <a onclick="hideModal('parking-lot-simulator-modal')" class="btn no-border btn-large cursor-point"><i
+                                    class="fa-solid fa-xmark"></i></a>
+                        </div>
+                        <img src="../public/images/parking-lot-simulator-free-camera.jpg" alt="parking lot simulator screenshot">
+                        <p>
+                            The Parking Lot Simulator was a personal project aimed at expanding my knowledge of multi-agent systems built in 3D space. 
+                            The project involved creating a multi-agent system to simulate a parking lot. This included implementing a finite state
+                            machine to control the behavior of cars, the A* pathfinding algorithm to guide agents along roads and into spaces, and 
+                            managing the state of individual spaces. The simulation automatically spawns cars and guides them to a parking space. 
+                            However, through the interface, the user can spawn additional vehicles and switch between camera views to observe the simulation.
+                            This application was built in the Unity Game Engine using C#.
+                        </p>
+                        <div style="margin: 15px auto">
+                            <a href="https://jacobrowland.itch.io/parking-lot-simulator" class="btn no-border btn-center" target="_blank"> Run the simulation <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-outer display-none" id="nubu-app-modal">
+                    <div class="modal-inner">
+                        <div class ="modal-top">
+                            <h2>NUBU Pharamceuticals Competition Kiosk</h2>
+                            <a onclick="hideModal('nubu-app-modal')" class="btn no-border btn-large cursor-point"><i class="fa-solid fa-xmark"></i></a>
+                        </div>
+                        <img src="../public/images/nubu-app-enter-your-details.jpg" alt="nubu app screenshot">
+                        <p>
+                            In 2023, following the completion of the CIAANZ website, I was additionally contracted by NUBU Pharmaceuticals to develop a marketing tool in the form of a kiosk app for conferences, including GPCME Rotorua. The app was constructed using React, Typescript, Material UI, and Firebase for hosting and storage. Its functionality includes a form for medical professionals attending the conference to enter their details for a chance to win a prize. Additionally, it incorporates a brief quiz about the company and its products, a terms and conditions dialog, and a completion page. The app was designed to be responsive and to operate on an iPad kiosk station. Moreover, it included settings for easy exportation of collected data to a CSV file for the company's future marketing endeavors.
+                        </p>
+                        <p style="font-size: smaller; opacity: 0.5;">Note: This repository is private. Please get in touch if you would like to view further materials.</p>
+                    </div>
+                </div>
+                <div class="modal-outer display-none" id="ciaanz-website-modal">
+                    <div class="modal-inner">
+                        <div class="modal-top">
+                            <h2>CIAANZ Website</h2>
+                            <a onclick="hideModal('ciaanz-website-modal')" class="btn no-border btn-large cursor-point"><i
+                                    class="fa-solid fa-xmark"></i></a>
+                        </div>
+                        <img src="../public/images/ciaanz-website.png" alt="ciaanz website screenshot">
+                        <p>
+                            I was contracted by the CEO of NUBU Pharamceuticals to build a website for the Cannabis Industry Association of Aotearoa New Zealand (CIAANZ) in early 2023. The website, built using Wix, was designed to inform the public about the association, its members, and the medicinal cannabis industry in New Zealand. 
+                            The site features five main pages. The home page, an industry certification page, an education page, news and a contact form. The site's primary purpose is to educate the public about the organisation and provide a pathway for medical professionals to become certified in prescribing cannabis-based products.
+                        </p>
+                        <div style="margin: 15px auto">
+                            <a href="https://www.ciaanz.org.nz/" class="btn no-border btn-center" target="_blank"> Visit the
+                                website <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-outer display-none" id="wolf3d-modal">
+                    <div class="modal-inner">
+                        <div class="modal-top">
+                            <h2>Unity Wolfenstein3D E1M1 Remake</h2>
+                            <a onclick="hideModal('wolf3d-modal')" class="btn no-border btn-large cursor-point"><i
+                                    class="fa-solid fa-xmark"></i></a>
+                        </div>
+                        <img src="../public//images/wolf3de1m1.png" alt="wolf3d unity graphic">
+                        <p>
+                            Using the Unity Game Engine I remade the first level (with some tweaks) from the iconic 1992
+                            title Wolfenstein3D. This project was taken to weave together multiple aspects
+                            of the game development process that I had been learning including basic 3D modelling,
+                            animation, AI, C# scripting and more.
+                            The level features two enemies including a guard and dog. Both use a finite state machine to
+                            intelligently switch between states to guide behaviour.
+                            For example, an idle guard will switch to the chase state when a player wonders into their field
+                            of view. Other features include full rotational movement, multiple pickup types
+                            , as well as, four distinct weapons (from the original game). These include the knife and pistol
+                            (on the player by default), as well as,
+                            the machine gun and barrel gun which are hidden in secret areas.
+                        </p>
+                        <div style="margin: 15px auto">
+                            <a href="https://jacobrowland.itch.io/e1m1" class="btn no-border btn-center" target="_blank">
+                                Play the game <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-outer display-none" id="url-shortener-modal">
+                    <div class="modal-inner">
+                        <div class="modal-top">
+                            <h2>URL Shortener Microservice</h2>
+                            <a onclick="hideModal('url-shortener-modal')" class="btn no-border btn-large cursor-point"><i
+                                    class="fa-solid fa-xmark"></i></a>
+                        </div>
+                        <img src="../public//images/url-shortener-thumbnail.jpg" alt="url shortener screenshot">
+                        <p>
+                            The URL Shortener Microservice was built in Javascript using the Express backend API framework,
+                            Mongoose, MongoDB Atlas (the hosted NOSQL document database) and Google's App Engine for
+                            deployment.
+                            The service allows a user to POST a URL to the API which returns JSON containing a shortened URL
+                            ID. This ID can then be appended to the URL shortener's URL to create a GET request that
+                            redirects the user to the original URL. This works by saving a document to the database which
+                            can then be used to look-up the returned ID.
+                            <br><br>e.g. [app url]/api/shorturl/931774092 will redirect to https://www.google.com<br>
+                        </p>
+                        <div style="margin: 15px auto">
+                            <a href="https://github.com/jacrowland/url-shortener-microservice"
+                                class="btn no-border btn-center" target="_blank"> Visit the Github repository <i
+                                    class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-outer display-none" id="pomodoro-timer-modal">
+                    <div class="modal-inner">
+                        <div class="modal-top">
+                            <h2>React Pomodoro Timer</h2>
+                            <a onclick="hideModal('pomodoro-timer-modal')" class="btn no-border btn-large cursor-point"><i
+                                    class="fa-solid fa-xmark"></i></a>
+                        </div>
+                        <img src="../public//images/pomodoro-timer-thumbnail.jpg" alt="'pomodoro timer app screenshot">
+                        <p>
+                            The main objective of this project was to learn how to use React hooks such as useEffect and
+                            useState. As this application has many shared pieces of state that must be updated
+                            and maintained over a period of time using a timer. The application allows the user to select
+                            two time lengths - a session of productivity and a break period. These
+                            two periods then alternate when the user presses the play button. Once a timer reaches zero a
+                            short audio clip plays to announce that the timer is finished before it
+                            switches to either a break or another session.
+                        </p>
+                        <div style="margin: 15px auto">
+                            <a href="https://pomodorotimerbyjacob.netlify.app/" class="btn no-border btn-center"
+                                target="_blank"> Visit the website <i class="fas fa-chevron-right"></i></a>
+                            <a href="https://github.com/jacrowland/pomodoro-timer" class="btn no-border btn-center"
+                                target="_blank"> Visit the Github repository <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-outer display-none" id="50kflatmate-modal">
+                    <div class="modal-inner">
+                        <div class="modal-top">
+                            <h2>@50kflatmate Updates Twitter Bot</h2>
+                            <a onclick="hideModal('50kflatmate-modal')" class="btn no-border btn-large cursor-point"><i
+                                    class="fa-solid fa-xmark"></i></a>
+                        </div>
+                        <img src="../public//images/50kflatmate.jpg" alt="'50k flatmate example tweet">
+                        <p>
+                            In June 2020 the New Zealand radio station The Edge ran a competition where ten
+                            twenty-somethings were placed into a flat.
+                            Their experience over the following 2 weeks was then live-streamed 24/7 on <a
+                                href="https://theedge.co.nz" class="nav-link"><i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i> theedge.co.nz</a>. Throughout the
+                            two weeks flatmates
+                            competed in challenges to earn money in between periods of elimination.
+
+                            The bot uses PuppeteerJS to open a headless instance of Google Chrome. It then navigates to the
+                            stream page and scrapes the relevant headers. It then clicks and snapshots each of the six
+                            cameras.
+                            Once complete, the bot then interacts with the Twitter API V2 by uploading four of the six
+                            cameras and posting a tweet with the time, the current stream title, and the media ids. The
+                            whole process is automated via an hourly Cronjob.
+
+                        </p>
+                        <div style="margin: 15px auto">
+                            <a href="https://twitter.com/50kflatmate" class="btn no-border btn-center" target="_blank"> Go
+                                to @50kflatmate <i class="fas fa-chevron-right"></i></a>
+                            <a href="https://github.com/jacrowland/50kflatmate-update-bot" class="btn no-border btn-center"
+                                target="_blank"> Visit the Github repository <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-outer display-none" id="react-redux-calculator-modal">
+                    <div class="modal-inner">
+                        <div class="modal-top">
+                            <h2>React Redux Calculator</h2>
+                            <a onclick="hideModal('react-redux-calculator-modal')"
+                                class="btn no-border btn-large cursor-point"><i class="fa-solid fa-xmark"></i></a>
+                        </div>
+                        <img src="../public//images/react-redux-calculator.jpg" alt="'react redux calculator screenshot">
+                        <p>
+                            This simple calculator app was built using HTML, CSS, JS, React and Redux - the state management
+                            framework.
+                            After becoming more familiar with React this project allowed me to leverage what I had learnt
+                            about using state, props,
+                            and hooks to build a more complex app with clearly defined actions (add, subtrack, clear etc.)
+                            These actions are handled by
+                            Reducer functions that allow for the the entire application's state to be stored in an app level
+                            store - this provides a
+                            single source of truth and removes the need for repeated prop drilling (the passing of
+                            parameters between components -
+                            even if they go unused by that component).
+                        </p>
+                        <div style="margin: 15px auto">
+                            <a href="https://reactreduxjscalculator.netlify.app/" class="btn no-border btn-center"
+                                target="_blank"> Visit the website <i class="fas fa-chevron-right"></i></a>
+                            <a href="https://github.com/jacrowland/react-redux-calculator" class="btn no-border btn-center"
+                                target="_blank"> Visit the Github repository <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-outer display-none" id="qr-code-modal">
+                    <div class="modal-inner">
+                        <div class="modal-top">
+                            <h2>Python QR Code Detector</h2>
+                            <a onclick="hideModal('qr-code-modal')" class="btn no-border btn-large cursor-point"><i
+                                    class="fa-solid fa-xmark"></i></a>
+                        </div>
+                        <img src="../public//images/qr-code-detector.jpg" alt="'qr code detector figure">
+                        <p>This assignment for COMPSCI 373 Computer Graphics and Image Processing at The University of
+                            Auckland involved developing a QR Code Detector from scratch in Python using only NumPy to
+                            import the image.
+                            In the process I gained an understanding of image processing techniques such as morphological
+                            operations, segmentation
+                            and connected component analysis. Several extensions where also incorporated
+                            including the implementation of an adaptive thresholding algorithm, as well as, ensuring the
+                            detector worked correctly on
+                            rotated images.
+
+                            My solution and its associated report was selected as one of the top three out of a class of
+                            more than 200.
+                        </p>
+                        <!--<a href="https://github.com/jacrowland/" class="btn no-border btn-center" target="_blank"> Visit my Github  <i class="fas fa-chevron-right"></i></a>-->
+                        <p style="font-size: smaller; opacity: 0.5;">Note: University requirements require this repository
+                            be kept private. Please get in touch if you would like to view the source code or further
+                            materials.</p>
+                    </div>
+                </div>
+                <div class="modal-outer display-none" id="visairo-ready-modal">
+                    <div class="modal-inner">
+                        <div class="modal-top">
+                            <h2>Visairo Ready</h2>
+                            <a onclick="hideModal('visairo-ready-modal')"
+                                class="btn no-border btn-large cursor-point"><i class="fa-solid fa-xmark"></i></a>
+                        </div>
+                        <video width="550" controls>
+                            <source src="../public/\videos\VisairoReadyShowcase.m4v" type="video/mp4">
+                        </video>
+                        <p>
+                            As a Marketing Intern at Fisher & Paykel Healthcare™ I developed Visairo™ Ready, a two-part
+                            online course, aimed at getting hospital staff ready for the
+                            introduction of the mask in their respiratory unit. The course was created using existing and
+                            new materials.
+                            Tasks involved in the creation of the courses included wireframing page concepts, writing
+                            scripts and storyboarding video content, and prototyping and developing interactive game-like
+                            experiences.
+                            Tools used to create the modules included Adobe XD, Davinci Resolve, Blender and Articulate 360.
+                        </p>
+                        <a href="https://www.fphcare.com/nz/hospital/adult-respiratory/noninvasive-ventilation/visairo/"
+                            class="btn no-border btn-center" target="_blank"> Get Visairo Ready <i
+                                class="fas fa-chevron-right"></i></a>
+                        <p style="font-size: smaller; opacity: 0.5;">Note: The F&P Education Hub requires a user account</p>
+                    </div>
+                </div>
+                <div class="modal-outer display-none" id="house-hunt-modal">
+                    <div class="modal-inner">
+                        <div class="modal-top">
+                            <h2>House Hunt Web Application</h2>
+                            <a onclick="hideModal('house-hunt-modal')"
+                                class="btn no-border btn-large cursor-point"><i class="fa-solid fa-xmark"></i></a>
+                        </div>
+                        <img style="height:300px ;object-fit: cover;" src="../public//images/house-hunt-web-app.jpg" alt="'house hunt web app screenshot">
+                        <p>
+                            House Hunt is a web application built using HTML, CSS, Bootstrap and JS. It uses Google's
+                            Firebase and Firestore services to host a document based database of properties for users to
+                            upload and view.
+                            It features user authentication, submitting properties, viewing properties, and managing of the
+                            user's profile and submissions.
+                        </p>
+                        <div style="margin: 15px auto">
+                            <!--<a href="http://jacobrowland.me/house-hunt/index.html" class="btn no-border btn-center" target="_blank"> Visit the website  <i class="fas fa-chevron-right"></i></a>-->
+                            <a href="https://github.com/jacrowland/house-hunt" class="btn no-border btn-center"
+                                target="_blank"> Visit the Github repository <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-outer display-none" id="visual-novel-modal">
+                    <div class="modal-inner">
+                        <div class="modal-top">
+                            <h2>Python Visual Novel Game</h2>
+                            <a onclick="hideModal('visual-novel-modal')"
+                                class="btn no-border btn-large cursor-point"><i class="fa-solid fa-xmark"></i></a>
+                        </div>
+                        <video width="550" controls>
+                            <source src="../public/\videos\My Date With Math Chan Showcase.m4v" type="video/mp4">
+                        </video>
+                        <p>
+                            My Date With Math Chan is a short visual novel built using <a class="nav-link"
+                                href="https://www.renpy.org/"><i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                RenPy</a> - a framework for building visual novels in Python.
+                            This project showcases Python scripting, image manipulation and non-linear storytelling.
+
+                            This game was created as a creative work for MATH 102 at The University of Auckland in 2019.
+                        </p>
+                        <div style="margin: 15px auto">
+                            <a href="https://github.com/jacrowland/mydatewithmathchan/releases/tag/release"
+                                class="btn no-border btn-center" target="_blank"> Download <i
+                                    class="fas fa-download"></i></a>
+                            <a href="https://github.com/jacrowland/mydatewithmathchan" class="btn no-border btn-center"
+                                target="_blank"> Visit the Github repository <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+    <footer>
+        <p><i class="fa-solid fa-copyright" style="padding-right: 5px"></i>Copyright <span id="current-year">X</span></p>
+        <a style="font-size: smaller" href="https://github.com/jacrowland/jacrowland.github.io" class="nav-link">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> 
+                View this project on Github
+        </a>
+    </footer>
+    <script>
+        const displayModal = (id) => { document.getElementById(id).classList.remove('display-none'); };
+        const hideModal = (id) => {
+            document.getElementById(id).classList.add('display-none');
+            document.querySelectorAll('video').forEach(video => video.id != "hero-bg-video" ? video.pause() : null);
+        }
+        document.getElementById('current-year').innerHTML = new Date().getFullYear();
+    </script>
+</html>
