@@ -22,11 +22,12 @@
             <section id="projects">
                 <div class="project-tiles">
                     <project-tile title="Python QR Code Detector" image-src="../public/images/qr-code-detector-thumbnail.jpg" id="qr-code"></project-tile>
-                    <project-tile title="NUBU Pharamceuticals Competition Kiosk App" image-src="../public/images/nubu-app-thumbnail.jpg" id="nubu-app"></project-tile>
+                    <project-tile title="Multi-Agent Parking Simulator" image-src="../public/images/parking-lot-simulator-thumbnail.jpg" id="parking-lot-simulator"></project-tile>
+                    <project-tile title="NUBU Pharamceuticals Competition Kiosk" image-src="../public/images/nubu-app-thumbnail.jpg" id="nubu-app"></project-tile>
                     <project-tile title="CIAANZ Website" image-src="../public/images/ciaanz-website-thumbnail.jpg" id="ciaanz-website"></project-tile>
                     <project-tile title="F&P Healthcare™ Visairo™ Ready" image-src="https://resources.fphcare.com/content/rt076-and-caregiver.jpg" id="visairo-ready"></project-tile>
                     <project-tile title="Unity Wolf3D E1M1 Remake" image-src="../public/images/wolf3de1m1.png" id="wolf3d"></project-tile>
-                    <!-- <project-tile title="Multinominal Naive Bayes Classifier" url="" image-src="https://www.sciencenews.org/wp-content/uploads/2016/05/052816_bayesian-opener_free.jpg" id="naive-bayes-project"></project-tile> -->
+                    <project-tile title="Multinominal Naive Bayes Classifier" url="https://github.com/jacrowland/naive-bayes" image-src="https://www.sciencenews.org/wp-content/uploads/2016/05/052816_bayesian-opener_free.jpg" id="naive-bayes-project"></project-tile>
                     <project-tile title="50kflatmate Updates Twitter Bot" image-src="../public/images/50kflatmate-thumbnail.jpg" id="50kflatmate"></project-tile>
                     <project-tile title="Python Visual Novel Game" image-src="../public/images/visual-novel-thumbnail.jpg" id="visual-novel"></project-tile>
                     <project-tile title="House Hunt Web App" image-src="../public/images/house-hunt-thumbnail.jpg" id="house-hunt"></project-tile>
@@ -41,16 +42,38 @@
                 </div>
             </section>
             <div id="modals">
+                <div class="modal-outer display-none" id="parking-lot-simulator-modal">
+                    <div class="modal-inner">
+                        <div class="modal-top">
+                            <h2>Multi-Agent Parking Simulator</h2>
+                            <a onclick="hideModal('parking-lot-simulator-modal')" class="btn no-border btn-large cursor-point"><i
+                                    class="fa-solid fa-xmark"></i></a>
+                        </div>
+                        <img src="../public/images/parking-lot-simulator-free-camera.jpg" alt="parking lot simulator screenshot">
+                        <p>
+                            The Parking Lot Simulator was a personal project aimed at expanding my knowledge of multi-agent systems built in 3D space. 
+                            The project involved creating a multi-agent system to simulate a parking lot. This included implementing a finite state
+                            machine to control the behavior of cars, the A* pathfinding algorithm to guide agents along roads and into spaces, and 
+                            managing the state of individual spaces. The simulation automatically spawns cars and guides them to a parking space. 
+                            However, through the interface, the user can spawn additional vehicles and switch between camera views to observe the simulation.
+                            This application was built in the Unity Game Engine using C#.
+                        </p>
+                        <div style="margin: 15px auto">
+                            <a href="https://jacobrowland.itch.io/parking-lot-simulator" class="btn no-border btn-center" target="_blank"> Run the simulation <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
                 <div class="modal-outer display-none" id="nubu-app-modal">
                     <div class="modal-inner">
                         <div class ="modal-top">
-                            <h2>NUBU Pharamceuticals Competition Kiosk App</h2>
+                            <h2>NUBU Pharamceuticals Competition Kiosk</h2>
                             <a onclick="hideModal('nubu-app-modal')" class="btn no-border btn-large cursor-point"><i class="fa-solid fa-xmark"></i></a>
                         </div>
                         <img src="../public/images/nubu-app-enter-your-details.jpg" alt="nubu app screenshot">
                         <p>
                             In 2023, following the completion of the CIAANZ website, I was additionally contracted by NUBU Pharmaceuticals to develop a marketing tool in the form of a kiosk app for conferences, including GPCME Rotorua. The app was constructed using React, Typescript, Material UI, and Firebase for hosting and storage. Its functionality includes a form for medical professionals attending the conference to enter their details for a chance to win a prize. Additionally, it incorporates a brief quiz about the company and its products, a terms and conditions dialog, and a completion page. The app was designed to be responsive and to operate on an iPad kiosk station. Moreover, it included settings for easy exportation of collected data to a CSV file for the company's future marketing endeavors.
                         </p>
+                        <p style="font-size: smaller; opacity: 0.5;">Note: This repository is private. Please get in touch if you would like to view further materials.</p>
                     </div>
                 </div>
                 <div class="modal-outer display-none" id="ciaanz-website-modal">
